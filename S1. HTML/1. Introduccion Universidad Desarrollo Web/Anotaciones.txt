@@ -1,0 +1,46 @@
+1. ¿Que es internet y como funciona?
+Internet nos permite compartir información entre computadoras. Podemos tener equipos que cotienen información y equipos que consultan información.
+
+Los sitios web los podemos ubicar de dos maneras: Nombre del sitio web, Direccion de IP (Internet Protocol). La IP es una combinacion de numeros que nos permite recuperar la informacion que contiene el servidor, de igual manera funciona poner el nombre del sitio web. DNS Checker (Domain Name Service: es un serivicio para encontrar el nombre de los equipos) , es un sitio que nos devuelve el IP segun el nombre que le damos.
+
+La forma en la cual se envía la información entre el servidor y los dispositivos normalmente es información de tipo HTML (HyperText Markup Language).
+
+-----------------------------------------------------------------------
+
+2. Herramientas a utilizar
+-Google Chrome
+-Visual Studio Code
+
+-----------------------------------------------------------------------
+
+3. Extensiones Visual Studio Code
+-Prettier
+-Live Server
+-Path Intellisense
+-HTML5
+
+-----------------------------------------------------------------------
+
+4. Estructura Basica HTML
+Con la etiqueta <!DOCTYPE html> estamos indicando que estamos trabajando con la ultima version de HTML.
+
+-----------------------------------------------------------------------
+
+5. Ejecutar un archivo HTML
+URL significa Uniform Resource Locator. Podemos abrir nuestros archivos HTML con live server o directamente desde el archivo que creamos.
+
+-----------------------------------------------------------------------
+
+6. Etiqueta Meta y charset
+Con la etiqueta meta y el atributo charset vamos a especificar el tipo de juego de caracteres que vamos a poder desplegar y utilizar en nuestra pagina web.
+Lo que modifica a la etiqueta se lo conoce como atributa y lo que se contiene entre las etiquetas se lo llama valor de la etiqueta.
+
+-----------------------------------------------------------------------
+
+7. Generación Automatica de HTML
+Visual Studio Code nos da una herramienta para generar un esquema similar al visto en index.html de manera automatica. Agregando un ! al comienzo del documento y tabulando nos va a generar la estructura basica.
+
+<meta http-equiv="X-UA-Compatible" content="IE-edge"/> || Nos agrega esta extension para que soporte HTML en navegadores de tipo internet explorer
+
+<meta name="viewport" content="widht=device-width, intial-scale=1.0"/> || Etiqueta para indicar el manejo responsivo de nuestras paginas HTML. Sirve para acomodar de manera responsiva los estilos CSS y los framework como BootStrap. 
+Dependiendo del tamaño de la pantalla o del dispositivo en el que estemos trabajando, los elementos HTML se pueden acomodar de manera automatica. Este concepto es conocido como Paginas Responsivas HTML. No solo se utiliza HTML, sino que tambien se utilizan hoja de estilo CSS o frameworks CSS como BootStrap-->
