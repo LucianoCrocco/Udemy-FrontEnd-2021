@@ -1,0 +1,123 @@
+			1. Introduccion Universidad Desarrollo Web
+
+1. ¿Que es internet y como funciona?
+Internet nos permite compartir información entre computadoras. Podemos tener equipos que cotienen información y equipos que consultan información.
+
+Los sitios web los podemos ubicar de dos maneras: Nombre del sitio web, Direccion de IP (Internet Protocol). La IP es una combinacion de numeros que nos permite recuperar la informacion que contiene el servidor, de igual manera funciona poner el nombre del sitio web. DNS Checker (Domain Name Service: es un serivicio para encontrar el nombre de los equipos) , es un sitio que nos devuelve el IP segun el nombre que le damos.
+
+La forma en la cual se envía la información entre el servidor y los dispositivos normalmente es información de tipo HTML (HyperText Markup Language).
+
+-----------------------------------------------------------------------
+
+2. Herramientas a utilizar
+-Google Chrome
+-Visual Studio Code
+
+-----------------------------------------------------------------------
+
+3. Extensiones Visual Studio Code
+-Prettier
+-Live Server
+-Path Intellisense
+-HTML5
+
+-----------------------------------------------------------------------
+
+4. Estructura Basica HTML
+Con la etiqueta <!DOCTYPE html> estamos indicando que estamos trabajando con la ultima version de HTML.
+
+-----------------------------------------------------------------------
+
+5. Ejecutar un archivo HTML
+URL significa Uniform Resource Locator. Podemos abrir nuestros archivos HTML con live server o directamente desde el archivo que creamos.
+
+-----------------------------------------------------------------------
+
+6. Etiqueta Meta y charset
+Con la etiqueta meta y el atributo charset vamos a especificar el tipo de juego de caracteres que vamos a poder desplegar y utilizar en nuestra pagina web.
+Lo que modifica a la etiqueta se lo conoce como atributa y lo que se contiene entre las etiquetas se lo llama valor de la etiqueta.
+
+-----------------------------------------------------------------------
+
+7. Generación Automatica de HTML
+Visual Studio Code nos da una herramienta para generar un esquema similar al visto en index.html de manera automatica. Agregando un ! al comienzo del documento y tabulando nos va a generar la estructura basica.
+
+<meta http-equiv="X-UA-Compatible" content="IE-edge"/> || Nos agrega esta extension para que soporte HTML en navegadores de tipo internet explorer
+
+<meta name="viewport" content="widht=device-width, intial-scale=1.0"/> || Etiqueta para indicar el manejo responsivo de nuestras paginas HTML. Sirve para acomodar de manera responsiva los estilos CSS y los framework como BootStrap. 
+Dependiendo del tamaño de la pantalla o del dispositivo en el que estemos trabajando, los elementos HTML se pueden acomodar de manera automatica. Este concepto es conocido como Paginas Responsivas HTML. No solo se utiliza HTML, sino que tambien se utilizan hoja de estilo CSS o frameworks CSS como BootStrap-->
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			2. Elementos Basicos HTML
+
+1. Titulos en HTML
+Los <hX> generan un "salto de linea" (En realidad es un elemento en bloque que ocupa toda nuestra pagina HTML). Segun el tamaño que deseamos utilizar podemos elegir entre h1 y h6
+Los que no genera un "salto de linea" son considerados elementos en linea
+
+-----------------------------------------------------------------------
+
+2. Parrafos en HTML
+El texto o los elementos con los que vamos manejar no necesariamente se manejan siempre con etiquetas. Sin embargo, las recomendaciones y mejores practicas es que siempre utilicemos una etiqueta que de el significado al elemento o texto que estamos agregando.
+Es muy importante el uso de etiquetas para despues utilizar CSS
+
+-----------------------------------------------------------------------
+
+3. Links en HTML
+Utilizamos el tag a (anchor) para movernos entre distintas paginas web o distintos lugares dentro de nuestra misma pagina.
+Con el atributo targer="_blank" podemos hacer que se abran en una nueva pestaña
+
+-----------------------------------------------------------------------
+
+4. Imágenes en HTML
+Podemos agregar imagenes directamente desde una carpeta de nuestro proyecto o podemos linkearlas directamente desde internet
+Si la imagen no tiene una ruta correcta nos mostrar un icono con la "imagen rota"
+Podemos asignarle un ancho, alto y un texto alternativo con atributos, entre otras cosas. El texto alternativo (alt) sirve por si se rompe la imagen, nos muestre el texto entre los alt.
+Es recomendable solo ajustar el ancho o el alto, ya que la otra propiedad se ajusta sola, si utilizamos los dos se puede deformar la imagen.
+
+-----------------------------------------------------------------------
+
+5. Manejo de Atributos en HTML
+El atributo <title> nos permite agregarle un titulo a la imagen. A diferencia del atributo <alt> se muestra si se carga de manera correcta la imagen y como el <alt> cuando no se muestra de manera correcta. El <title> se despliga cuando tenemos el curso por encima de nuestra imagen. Se aplican las mismas condiciones para otras etiquetas que no son <img>
+Si bien podemos poner un atributo style es una buena practica que todo lo que modifique el estilo de nuestra pagina se haga a traves de CSS3 o un framework afin.
+
+Los parrafos no respetan los enter ni los espacios, con el tag <pre> (dentro del atributo <p>) si se va a reseptar tal cual lo estamos agregando. La etiqueta <pre> significa preformated.
+
+-----------------------------------------------------------------------
+
+6. Aplicar estilos CSS en HTML
+Si bien podemos aplicar CSS a nuestras tags de HTML, es recomendable utilizar un archivo aparte CSS y vincularlo al tag. Vamos a ver como se aplica en las tags pero NO es una buena prectica hacerlo en el mismo archivo HTML, hacerlo como se menciona anteriormente.
+
+Puedo agregar mas de un atributo dentro del style dentro de mi tag si separo por ;.
+
+-----------------------------------------------------------------------
+
+7. Formato de texto en HTML
+Si bien podemos dar formato a nuestras tags en el mismo HTML, es una buena practica y se hace con regularidad con hojas de estilos CSS.
+Con el tag <b></b> Podemos aplicar negrita a nustro texto
+La etiqueta <strong></strong> nos va a dar el mismo resultado visual que usar la etiqueta <b> pero en la teoria/semantica significa que es mucho mas importante
+La etiqueta <i></i> nos da el texto en italica
+La etiqueta <em></em> da el mismo resultado visual que la italica pero se utiliza para enfatizar mucho mas en ese tipo de texto
+La etiqueta <small></small> es un texto normal pero mas pequeño
+La etiqueta <mark></mark> es un resaltar el texto
+La etiqueta <del></del> es para indicar que nuestro texto se elimina. Dibuja una linea horizontal recta por encima del texto
+La etiqueta <ins></ins> es para indicar que nuestro texto se esta insertando. Subraya el texto.
+La etiqueta <sub></sub> es para indicar que nuestro texto es un subíndice. Sirve como para mostrar de manera correcta la formula de H2O
+La etiqueta <sup></sup> es para indicar que nuestro texto es un superíndice.
+
+Las etiquetas mencionadas anteriormente no son solo para dar formato sino tambien para darle un sentido semantico al texto que estamos agregando. 
+
+-----------------------------------------------------------------------
+
+7. Referencias de caracteres en HTML
+La etiqueta <code></code> da formato al texto como si fuese un código. Muy util si queremos mostrar lenguajes de programación.
+
+Si nuestro teclado o nuestra codificacion no permite el acceso a ciertos caracteres podemos ingresar a la pagina https://dev.w3.org/html5/html-author/charref y poner el caracter que querramos copiando el codigo y poniendolo en la tag. Ejemplo: <p>&reg;</p> | Podemos utilizar el nombre del caracter, el valor hexadecimal o el valor decimal.
+Esta practica es muy util ya que puede dar error de sintaxis utilizar !<>, con el codigo que provee la pagina anterior este problema se resuelve facilmente.
+Si tenemos problemas con las tildes podemos utilizar el siguiente formal &(letra)accute;
+
+-----------------------------------------------------------------------
+
+7. Link para enviar un Email en HTML
+Utilizamos la etiqueta a pero dentro del atributo href especificamos que enviamos en mail de la siguiente manera: href="mailto:(MAIL)"
+Podemos agregar un titulo y un cuerpo de inicio del mensaje de la siguiente forma: href="mailto:(MAIL)?subject=(TITULO)&body=(MENSAJE)" | El caracter & nos permite concatenar otro parametro
