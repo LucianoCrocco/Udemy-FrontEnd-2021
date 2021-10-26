@@ -1,0 +1,10 @@
+1. Listas en HTML
+Existen 3 tipos de listas: listas ordenadas<ol>; listas no ordenadas <ul>;  listas de definicion<dl>;
+Para aregar elementos a este tipo de listas utilizamos el tag <li> (list item).
+Podemos cambiar los iconos por default del tipo de las listas con CSS. (style="list-style-type:"";)
+Tambien podemos anidar listas.
+
+-----------------------------------------------------------------------
+2. Menu de navegacion con Listas en HTML y 3. Menu de Navegacion con CSS
+
+-----------------------------------------------------------------------

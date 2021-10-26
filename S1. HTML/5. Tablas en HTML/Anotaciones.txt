@@ -1,4 +1,28 @@
 1. Tablas en HTML
-
+Con la etiqueta table declaramos una tabla de HTML.
+La etiqueta tr (table row) define un nuevo renglon de nuestra tabla.
+Podemos (o no) agregar a nuestra primera etiqueta tr una cabecera con la etiqueta th (table head).
+Si definimos cabecera debemos definir un nuevo tr y agregar el atributo td (table data). 
+El td es de izquierda a derecha. tr agrega un renglon de arriba hacia abajo, th es de izquierda a derecha
 
 -----------------------------------------------------------------------
+
+2. Tablas en HTML con CSS
+Por default los table head se ponen en negrita y centrado en nuestra tabla.
+Por default los table data se cargan hacia la izquierda
+border-collapse: collapse; -> para colapsar las cajitas dentro de la tabla por cada td,th,tr
+border-spacing: 5px; -> para espaciar las cajitas dentro de la tabla por cada td,th,tr
+
+-----------------------------------------------------------------------
+
+3. Atributos colspan y rowspan en Tablas HTML
+Para que la tabla ocupe todo el lugar posible podemos asignar el siguiente estilo: width: 100%;
+Si queremos ocupar elementos de tablas  adyacentes de izquierda a derecha podemos utilizar el atributo colspan="" dentro de mi th o td para indicar cuantas celdas de izquierda a derecha va a ocupar.
+Para expandir renglones tenemos la propiedad de rowspan="" dentro de mi td o th para para indicar cuantas celdas de de arriba hacia abajo va a ocupar.
+
+-----------------------------------------------------------------------
+
+4. Estilos CSS a Tablas HTML
+Si queremos agregar un titulo a nuestra tabla podemos agregar la tag de caption. La etiqueta debe estar inmediatamente despues de la etiqueta de table
+tr :nth-child(even) -> Nos permite seleccionar los renglones pares o impares (even pares, odd impares)
+Los renglones no distigune de th y td.
