@@ -1,0 +1,8 @@
+1. Estado y colores de los links en HTML y CSS
+Podemos modificar el estado (azul si no lo clikeo, morado si lo clickie y rojo si lo mantengo presionado, etc) con CSS 
+
+-----------------------------------------------------------------------
+
+4. Rutas relativas y absolutas en HTML
+Ruta relativa = "contenido.html" -> Solo especificamos una parte y no la URL completa
+Ruta absoluta = "http://google.com.ar" -> URL completa

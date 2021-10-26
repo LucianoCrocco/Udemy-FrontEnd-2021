@@ -109,7 +109,7 @@ Las etiquetas mencionadas anteriormente no son solo para dar formato sino tambie
 
 -----------------------------------------------------------------------
 
-7. Referencias de caracteres en HTML
+8. Referencias de caracteres en HTML
 La etiqueta <code></code> da formato al texto como si fuese un código. Muy util si queremos mostrar lenguajes de programación.
 
 Si nuestro teclado o nuestra codificacion no permite el acceso a ciertos caracteres podemos ingresar a la pagina https://dev.w3.org/html5/html-author/charref y poner el caracter que querramos copiando el codigo y poniendolo en la tag. Ejemplo: <p>&reg;</p> | Podemos utilizar el nombre del caracter, el valor hexadecimal o el valor decimal.
@@ -118,6 +118,80 @@ Si tenemos problemas con las tildes podemos utilizar el siguiente formal &(letra
 
 -----------------------------------------------------------------------
 
-7. Link para enviar un Email en HTML
+9. Link para enviar un Email en HTML
 Utilizamos la etiqueta a pero dentro del atributo href especificamos que enviamos en mail de la siguiente manera: href="mailto:(MAIL)"
 Podemos agregar un titulo y un cuerpo de inicio del mensaje de la siguiente forma: href="mailto:(MAIL)?subject=(TITULO)&body=(MENSAJE)" | El caracter & nos permite concatenar otro parametro
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			3. Introduccion a HTML en CSS
+
+1. Manejo de Colores en CSS y HTML y 2. Manejo de Colores en CSS y HTML parte 2
+Pagina para ver los colores que soporta por defecto HTML y otros tipos de anotaciones (Name, Hexadecimal, RGB, hsl): https://htmlcolorcodes.com/es/nombres-de-los-colores/
+Para aplicar color a una tag debemos agregar un atributo style="color:(COLOR);"
+
+rgba para aplicar transparencia a un borde, ejemplo: <p style="border: 10px solid rgba(220, 20, 60, .25);">Color por RGBA con transparencia</p>.
+Tambien podemos aplicarlo de la misma forma con hsla (obviamente respetando que no utiliza un numero de 0 a 255 sino su propia regla)
+
+-----------------------------------------------------------------------
+
+3. Introduccion a CSS (Cascading Style Sheet)
+Como es muy impractico poner codigo CSS en cada tag, vamos a utilizar las facilidades que nos da CSS para desarrollar el diseño para una o varias tags/paginas html.
+Podemos relacionar nuestro CSS al HTML con la etiqueta link. Ej: <link rel="stylesheet" href="css/estilos.css">
+
+-----------------------------------------------------------------------
+
+4. Cascadeo en las Hojas de Estilo CSS
+Se llaman hojas de estilo en cascada porque si aplicamos a un nivel superior un estilo, entonces este estilo es aplica desde el elemento padre hasta el elemento hijo. Siendo nuestra hoja CSS nuestro padre y los tags de HTML los hijos.
+Relacion padre-hijo(s). Algo asi como un virtual en C#. Browser Default Styles -> External Styles -> Embedded Styles -> Inline Styles
+
+-----------------------------------------------------------------------
+
+5. Box Model en CSS
+El model de caja es como una mamushka, de afuera hacia dentro seria algo asi: Margin->Border->Padding->Content. A su vez tenemos los 4 ejes cartesianos para modificar. Esto se ve cuando se inspecciona un elemento con la herramienta Chrome en la seccion computed.
+
+-----------------------------------------------------------------------
+
+6. Manejo de Padding, Border y Margin en CSS
+Como se menciona en el punto 5. Podemos editar 1, 2, 3 o los 4 ejes cartesianos.
+El orden en caso de querer hacerlo solo con la propiedad margin es: top-right-bottom-left
+
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    Es lo mismo que:
+    margin: 40px(top) 10px(right) 20px(left) 10px(bottom);
+
+Tambien si sabemos que el right y el left va a ser el mismo podemos tener la siguiente configuracion del margin:
+    margin: 40px(top) 10px(right-left) 20px(bottom);
+
+Podemos aplicar el mismo margin de izquierda a derecha eliminando los margenes superiores e inferiores:
+    margin:auto (Pixeles)px;
+
+-----------------------------------------------------------------------
+
+7. Ejemplo de Paleta de Colores en CSS
+
+https://coolors.co/palettes/trending
+
+
+1. Estado y colores de los links en HTML y CSS
+Podemos modificar el estado (azul si no lo clikeo, morado si lo clickie y rojo si lo mantengo presionado, etc) con CSS 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			4. Links en HTML y CSS
+
+1. Estado y colores de los links en HTML y CSS
+Podemos modificar el estado (azul si no lo clikeo, morado si lo clickie y rojo si lo mantengo presionado, etc) con CSS 
+
+-----------------------------------------------------------------------
+
+4. Rutas relativas y absolutas en HTML
+Ruta relativa = "contenido.html" -> Solo especificamos una parte y no la URL completa
+Ruta absoluta = "http://google.com.ar" -> URL completa
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			5. Tablas en HTML

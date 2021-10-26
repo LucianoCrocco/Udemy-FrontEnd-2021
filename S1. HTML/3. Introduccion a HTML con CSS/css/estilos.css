@@ -1,0 +1,16 @@
+h1 {
+    color: #00b4d8;
+}
+
+p{
+    color: white;
+    background-color: forestgreen;
+    padding: 15px;
+    border: 10px solid #b5e48c;
+    /*margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 60px;*/
+    margin: 40px 10px 20px 60px;
+    text-align: center;
+}
