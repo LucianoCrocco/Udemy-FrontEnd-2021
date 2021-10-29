@@ -228,3 +228,18 @@ Los renglones no distigune de th y td.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			6. Listas en HTML
+
+1. Listas en HTML
+Existen 3 tipos de listas: listas ordenadas<ol>; listas no ordenadas <ul>;  listas de definicion<dl>;
+Para aregar elementos a este tipo de listas utilizamos el tag <li> (list item).
+Podemos cambiar los iconos por default del tipo de las listas con CSS. (style="list-style-type:"";)
+Tambien podemos anidar listas.
+
+-----------------------------------------------------------------------
+5. Listas de Descripcion
+Utilizamos la etiqueta dl. Se relacion a traves de una key y un value.
+La etiqueta dt (description term) para describir nuestro termino y la etiqueta dd (description data) para agregar la informacion de ese termino.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			7. Elementos inline y block en HTML y más temas
