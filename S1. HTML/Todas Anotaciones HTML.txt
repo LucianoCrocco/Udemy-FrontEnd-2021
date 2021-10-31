@@ -243,3 +243,48 @@ La etiqueta dt (description term) para describir nuestro termino y la etiqueta d
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			7. Elementos inline y block en HTML y más temas
+
+1. Elementos inline y block en HTML
+Para los elementos en linea vamos a ver la etiqueta span y para los elementos en bloque la etiqueta div. 
+La diferencia entre ambos es que los elementos de bloque se inician en una nueva linea, en cambio los elementos en linea no inician una linea sino que se aplican dentro de la misma linea en donde estamos trabajando
+La division abarca todo el espacio-ancho posible. 
+
+-----------------------------------------------------------------------
+2. Atributo class en HTML y CSS
+Si por alguna razon solo queremos aplicar nuestros estilos a ciertos elemeentos podemos utilizar el concepto de class y aplicarlo solamente a los elementos CSS que nosotros querramos.
+Necesitamos crear una clase para aplicar CSS a los elementos que necesitemos. Se definen dentro del archivo css con un ".(nombre)" y para vincularlo con el archivo html dentro de la etiqueta utilizamos el atributo class="claseCSS"
+
+Con el * indicamos que se va aplicar a todo mi HTML el CSS que definamos dentro
+
+Como funciona en cascada si volvemos a definir un elemento luego de otro el primero se va a sobreescribir dentro del tag que tenga mi estilo CSS (variables locales vs variables globales en programacion)
+
+Se recomienda que nuestros titulos en CSS no debe contener ni espacios ni caracteres especiales, se recomienda utilizar minusculas y si tengo varias palabras separarlas por guion.
+
+Para agregar mas de una clase a nuestro html simplemente espaciamos con la otra clase y ponemos el nombre.
+
+-----------------------------------------------------------------------
+4. Atributo id en HTML
+Si queremos aplicar ciertos estilos solamente a un elemento de nuestra pagina HTML y este sea un elemento unico dentro de nuestra pagina HTML utilizaremos el concepto de ID (similar al de class). 
+Utilizamos el caracter #(nombre)  para indicar que estamos utilizando un elemento de tipo id.
+Es importante que tengamos un solo elemento HMTL afectado por identificador (id). Si bien visualmente no notaremos ningun error, esto nos puede traer problemas cuando utilizemos JavaScript. 
+
+-----------------------------------------------------------------------
+4. Marcadores o Bookmarks en HTML
+El atributo de ID no solo sirve para asociar un identificador CSS y mejorar visualmente el elemento. Tambien sirve para otras cuestiones, por ejemplo para agregar el concepto de bookmarks o marcadores en HTML
+
+Podemos genrar un id="(Nombre)" y vincularlo con un anchor href para ir hacia ese elemento especifico si clickeamos en el link. 
+El identificador distingue de mayusculas y minusculas.
+
+Se mueve nuestra pagina hacia el id marcado y a nuestra URL se le agrega el indentificador que utilizamos para que ocurra este salto (ej: index.html#Java). 
+Es muy util esta herramienta del URL ya que desde cualquier pagina podemos ir directamente a esa URL que nos proporciona el marcador
+
+-----------------------------------------------------------------------
+5. iFrames en HTML
+Un iFrame en HTML es un marco HTML en le cual vamos a poder agregar informacion HTML. Asi que vamos a poder agregar desde paginas HTML, otros sitios web directamente dentro de una pagina HTML, videos, documentos, etc.
+
+Podemos utilizar el tag anchor para cargar un sitio web a nuestro frame.
+Ejemplo: <a href="index.html" target="marco1">Cargar index</a> -> Nuestro target tiene que coincidir con el atributo name que le otorgemos a nuestro iframe.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			7. Formularios en HTML
