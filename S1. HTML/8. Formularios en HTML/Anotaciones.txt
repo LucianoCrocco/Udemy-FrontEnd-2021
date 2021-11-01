@@ -1,5 +1,80 @@
 1. Formularios en HTML
+Un formulario nos va a permitir capturar información del usuario.
+Para generar un formulario utilizamos la etiqueta de form. Para que se visualice en el navegador debemos agregar elementos que compongan nuestro formulario.
+
+Los elementos de tipo input nos permiten capturar información de parte del usuario.
+Con el atributo type vamos a especificar que tipo de elemento vamos a manejar.
+
+Con el atributo id vamos a darle un nombre a ese elemento.
+
+El atributo value sirve, por ejemplo, para darle un nombre a un boton cuando se visualice o darle un valor inicial a un elemento de tipo texto. 
+
+El atributo name se utiliza para especificar el nombre que se va a mostrar como parte del parametro que se va a enviar hacia el servidor. Es recomendable que tenga el mismo nombre que el id. Tambien utilizamos el name para vincular uno o mas elementos de nuestro form.
+
+El atributo placeholder nos va a permitir agregar un texto descrpitivo dentro de nuestro elemento para relalizar indicaciones.
+
+La información se va a enviar a un servidor o la vamos a procesar con JavaScript.
 
 
 -----------------------------------------------------------------------
-2. 
+2. Validar Formularios en HTML
+Con el atributo de required dentro del tag podemos indicar que es un campo requerido. required="true"
+
+Si queremos que un formulario no se valide, tenemos el atributo novalidate que podemos agregar dentro del tag de form. Tambien podemos agregar el atributuo novalidate="formnovalidate" dentro de un tag del form para que no haga falta validacion (por default no hace falta validar.)
+
+-----------------------------------------------------------------------
+3. Metodo GET y POST HTTP
+Los parametros despues del signo '?' en la URL son los parametros que enviamos al servidor. A esto se lo conoce como Query String.
+
+Si tenemos información sensible (un campo de password por ejemplo) podemos cambiar el tipo de metodo para enviar la información al servidor (en la etiqueta form con el atributo method). Por default se utiliza el metodo GET, pero podemos utilizar el metodo POST para enviar la información sin que se agregue a la URL (Se envia en el request HTTP).
+
+-----------------------------------------------------------------------
+4. Tipos Email y Number en Formularios HTML
+Los caracteres especiales sufren una codificacion segun el juego de caracteres que nosotros indicamos en el head de nuestra pagina HTML, para despues ser enviados al servidor (HTML URL Encoding).
+
+Si queremos que acepte numeros flotantes nuestro input type number, debemos agregar el atributo step="any".
+
+-----------------------------------------------------------------------
+5. RadioButtons y Checkboxes en Formularios HTML
+
+Para poder seleccionar un solo radiobutton el valor de name debe ser el mismo, de lo contrario podemos seleccionar mas de una opcion.
+El valor que se envia del radiobutton es el que especificamos en el atributo value.
+
+La diferencia entre los radiobutton y los checkboxes es que los radiobutton se acostumbra que solo seleccionemos una opcion, en cambio los checkboxes una o varias opciones.
+
+-----------------------------------------------------------------------
+6. Elemento Select y TextArea en HTML
+
+Con el tag select podemos generar una lista deplegable de elementos. Para generar esta lista dentro del select utilizamos el tag de option.
+
+No importa el texto de la etiqueta, importa el atributo value, que es lo que se va a enviar al servidor.
+
+Con el atributo multiple="true" dentro del tag select indicamos que podemos seleccionar mas de una opcion.
+
+Con el atributo selected="true" dentro de una option indicamos que ese value va a ser el primero en ser seleccionado para mostrar apenas se carga el formulario
+
+
+El tag textarea nos va a permitir enviar una caja de texto a nuestro servidor. Sirve, por ejemplo, para enviar comentarios, observaciones, problemas, etc. Si escribrimos un texto entro de las tags de apertura y cierre, este se va a agreagar al textarea tal cual se lo ingreso (respeta espacios, tabulaciones, etc).
+
+-----------------------------------------------------------------------
+7. Fieldset y Legend en Formularios HTML
+
+El Fieldset nos permite generar un marco al formulario. Es una buena practica que el tag se coloque luego del tag form y que todo lo que vaya en el formulario se encuentre dentro del fieldset.
+
+Con la etiqueta legend dentro del fieldset vamos a poder agregarle un titulo a nuestro formulario.
+
+Ambas tags no afectan a la información que se envia al servidor, simplemente mejora visualmente el formulario.
+
+-----------------------------------------------------------------------
+8. Atributos del element form en HTML
+
+La información se va a procesar con JS o con un servidor. Pero cuando llegue el momento precisamos indicar cual es la URL que va a procesar este formulario.
+
+Con el atributo de action="(URL)" vamos a poder indicar donde se va a procesar esa informacion. (Si queremos ver el metodo utilizado, post o url, podemos enviar el formulario a una direccion invalida)
+
+Con el atributo de target podemos indicar si la respuesta (Query) se envia en la misma pestaña o se abre una nueva pestaña (target="_self o _blank").
+
+Con el autocomplete="off" anulamos la posibilidad de que el usuario utilice informacion que ya a enviado anteriormente (Por ejempl cuando nos aparecen nombres que ya hemos ingresado con anterioridad).
+
+-----------------------------------------------------------------------
+9. Mas elementos de tipo input
