@@ -1,0 +1,11 @@
+1. Elementos semanticos en HTML
+Tiene el beneficio de que les es mas facil a los buscadores de paginas web clasificar cada una de las secciones de nuestra pagina web.
+Los elementos semanticos no tienen una diferencia visual. Simplemente agregan un significado al elemento o etiqueta HTML.
+
+Etiquetas estructurales en HTML
+<section> -> Podemos agregar una seccion en lugar de utilizar un elemento de tipo div.
+<article> -> Son elementos independientes
+<aside> -> Es para agregar un elemento en la barra lateral
+<header> y <footer> -> Agrega un cabecero y un pie de pagina.
+<hgroup> -> Podemos agrupar diferentes titulos (h1-h6)
+<nav> -> Para definir una barra de navegacion.

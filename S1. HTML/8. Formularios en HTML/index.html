@@ -10,7 +10,17 @@
     <h1>Formularios en HTML</h1>
     <form>
         <fieldset>
-            <legend>Datos Persona:</legend>
+            <legend>Datos Persona</legend>
+
+            <label for="idPersona">ID Persona </label>
+            <input type="text" id="idPersona" name="idPersona" required="true" readonly="true" disabled="true">
+
+            
+            <input type="hidden" id="sistema" name="sistema" value="SAP" required="true">
+
+            <br>
+            <br>
+
             <label for="nombre">Nombre </label>
             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true">
 
@@ -50,6 +60,7 @@
 
             <br>
             <br>
+
             <label>Género Música Favorita: </label>
             <input type="checkbox" name="musica" id="clasica" value="Clasica">
             <label for="clasica">Clasica</label>
@@ -77,7 +88,10 @@
 
             <input type="submit" value="Enviar">
             <input type="submit" value="Enviar sin validar" formnovalidate="formnovalidate">
+            <input type="reset" value="Resetear campos">
         </fieldset>
     </form>
+    <br><br>
+    <a href="login.html">Formulario Login</a>
 </body>
 </html>

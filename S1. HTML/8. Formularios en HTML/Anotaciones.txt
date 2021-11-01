@@ -78,3 +78,11 @@ Con el autocomplete="off" anulamos la posibilidad de que el usuario utilice info
 
 -----------------------------------------------------------------------
 9. Mas elementos de tipo input
+
+El input reset nos va a permitir reiniciar todos los campos de nuestro formulario.
+
+El atributo readonly="true" nos va a permitir que el usuario no modifique la informacion del campo. Esto se utiliza comunmente si el servidor envia informacion a la pagina web y queremos que el usuario simplemente vea esa informacion que nos dio. De igual manera, este campo readonly se envia igual junto con los otros elementos de nuestro formulario.
+
+Los input de tipo hidden nos permite enviar parametros ocultos. Son ocultos para el usuario. Si tenemos el metodo get este elemento hidden se va a poder ver en la URL.
+
+El atributo de disabled nos va a permitir que el usuario no pueda interactuar con algun elemento del formulario y no se va a enviar al servidor.
