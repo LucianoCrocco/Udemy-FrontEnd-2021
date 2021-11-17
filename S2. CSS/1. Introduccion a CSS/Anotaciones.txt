@@ -1,5 +1,3 @@
-			1. Introduccion Universidad Desarrollo Web
-
 1. Introduccion a CSS
 CSS nos va a permitir mejorar visualmente nuestra paginas HTML. Por un lado HTML tiene como objetivo agregar la estructura de nuestra pagina web, por otro lado CSS va a mejorar visualmente estas etiquetas HTML.
 
@@ -38,7 +36,3 @@ Ejemplo: h2, h3{//contenido}
 
 6. Subclases en CSS
 p.centrar{} -> Primero se selecciono el elemento y posteriormente le aplico el estilo CSS que va a ser UNICO para ese elemento que seleccione. La clase sera solamente reutilizable para esa clse que especifique al comienzo.
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-			2. Colores, Bordes y más en CSS

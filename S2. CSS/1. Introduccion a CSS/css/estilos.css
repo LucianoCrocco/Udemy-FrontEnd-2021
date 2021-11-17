@@ -1,0 +1,30 @@
+*{
+    background-color: powderblue;
+}
+
+.titulo{
+    color: aqua;
+    text-align: left;
+}
+
+#titulo-unico{
+    color: darkgreen;
+    text-align: center;
+}
+
+.centrar{
+    text-align: center;
+    font-size: 10px;
+}
+.texto-grande{
+    font-size: 25px;
+}
+
+h2, h3{
+    color: violet;
+    text-align: center;
+}
+
+p.centrar{
+    text-align: center;
+}
