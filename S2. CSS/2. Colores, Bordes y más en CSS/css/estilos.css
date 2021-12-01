@@ -1,0 +1,117 @@
+h1{
+    text-align: center;
+}
+/*Colores por nombre en CSS*/
+.rojo, .rosa, .violeta{
+    color: white;
+}
+.rojo {
+    background-color: firebrick;
+}
+.rosa{
+    background-color: hotpink;
+}
+.amarillo{
+    background-color: gold;
+}
+.violeta{
+    background-color: blueviolet;
+}
+.verde{
+    background-color: lime;
+}
+.azul{
+    background-color: turquoise;
+}
+
+/*Colores y Bordes en CSS*/
+.rojo-border {
+    border: 10px solid firebrick;
+}
+.rosa-border {
+    border: 10px dashed rgb(255, 105, 180);
+}
+.amarillo-border {
+    border: 10px double #ffd900;
+}
+.azul-border {
+    border: 10px dotted hsl(174, 72%, 56%);
+}
+
+/*Manejo de Bordes en CSS*/
+.punteado{
+    border-style: dotted;
+}
+.discontinuo{
+    border-style: dashed;
+}
+.solido{
+    border: 10px solid red;
+}
+.doble{
+    border: 5px double;
+}
+.surco{
+    border: 10px groove;
+}
+.cresta{
+    border: 10px ridge;
+}
+.recuadro{
+    border: 10px inset; 
+}
+.outset{
+    border: 10px outset; 
+}
+.sin-borde{
+    border: none;
+}
+.oculto{
+    border: hidden;
+}
+.mixto {
+    border-width: 5px;
+    border-style: dotted solid dashed double;
+}
+
+/*Ancho de Bordes con CSS*/
+.borde-cuatro-anchos{
+    border-width: 15px 10px 6px 3px;
+}
+.borde-tres-anchos{
+    border-width: 5px 15px 8px;
+}
+.borde-dos-anchos{
+    border-width: 5px 15px;
+}
+.borde-uno-ancho{
+    border-width: thin /*thin, medium, thick*/ ;
+}
+
+/*Codigos de Colores en Bordes CSS*/
+.color-border-cuatro-ancho{
+    border-color: crimson hotpink gold lime;
+}
+.color-border-tres-ancho{
+    border-color: #457b9d hsl(270, 50%, 40%, 0.7) indigo;
+}
+.color-border-dos-ancho{
+    border-color: aqua tomato;
+}
+.color-border-uno-ancho{
+    border-color: crimson;
+}
+
+/*Redondeo de Bordes en CSS*/
+.redondeo-cuatro-bordes{
+    border-radius: 15px 6px 2px 9px;
+}
+.redondeo-tres-bordes{
+    border-radius: 15px 9px 1px;
+}
+.redondeo-dos-bordes{
+    border-radius: 15px 2px;
+}
+.redondeo-un-borde{
+    border-radius: 15px;
+}

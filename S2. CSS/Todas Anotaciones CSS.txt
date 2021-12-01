@@ -42,3 +42,51 @@ p.centrar{} -> Primero se selecciono el elemento y posteriormente le aplico el e
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			2. Colores, Bordes y más en CSS
+
+1. Colores por nombre en CSS
+Tenemos 140 colores definidos por nombres en HTML (https://htmlcolorcodes.com/es/nombres-de-los-colores/).
+Tambien podemos agregar colores con codigo Hexadecimal o RGB.
+
+Puedo agrupar clases para que se aplique un mismo estilo poniendo el nombre de la clase, separado con una coma. Ej:
+.rojo(clase), .rosa(clase), .violeta(clase){
+    color: white;
+}
+-----------------------------------------------------------------------
+
+2. Colores y Bordes en CSS
+Haciendo click en el color HTML podemos modificar/acceder al color en RGB y Hexadecimal.
+Algunas propiedades de los bordes en CSS: https://www.w3schools.com/css/css_border.asp
+Para indicar una unidad de medicion NO se debe dejar espacios en su declaracion (1px - 1 px <-NO)
+-----------------------------------------------------------------------
+
+3. Manejo de Bordes en CSS
+Pagina de referencia para ver el tipo de bordes disponibles en CSS: https://www.w3schools.com/css/css_border.asp
+border es una propiedad que simplifica otras propiedades, por ejemplo border contiene la propiedad border-style, border-color, border-width, etc.
+Podemos mixear bordes segun nuestra conveniencia, seguirá el orden: arriba-derecha-abajo-izquierda.
+-----------------------------------------------------------------------
+
+4. Ancho de Bordes con CSS
+Podemos aplicar distintos grosores a los bordes de CSS.
+Si queremos aplicar 4 bordes de distinto tamaño utilizaremos el siguiente formato: superior-derecha-inferior-izquierda.
+Si queremos aplicar 3 bordes de distinto tamaño utilizaremos el siguiente formato: superior-DerechaIzquierda-inferior.
+Si queremos aplicar 2 bordes de distinto tamaño utilizaremos el siguiente formato: SuperiorInferior-DerechaIzquierda.
+Tenemos las propiedades thin, medium y thick como propiedades de tamaños definidas en CSS.
+-----------------------------------------------------------------------
+
+5. Codigos de Colores en Bordes CSS
+Si bien con la propiedad de border (que engloba otras propiedades) podemos aplicar color, tambien tenemos la propiedad border-color. Al igual que con el width, podemos jugar con el color superior-inferior-izquierda-derecha de nuestro ancho.
+Al igual que con bordes, se mantiene el mismo criterio para los lados.
+Si queremos aplicar 4 bordes de distinto color utilizaremos el siguiente formato: superior-derecha-inferior-izquierda.
+Si queremos aplicar 3 bordes de distinto color utilizaremos el siguiente formato: superior-DerechaIzquierda-inferior.
+Si queremos aplicar 2 bordes de distinto color utilizaremos el siguiente formato: SuperiorInferior-DerechaIzquierda.
+-----------------------------------------------------------------------
+
+6. Redondeo de Bordes en CSS
+Comparte los mismo criterios que los 2 anteriormente vistos.
+Si queremos aplicar 4 redondedo bordes de distintos utilizaremos el siguiente formato: SuperiorIzquierdo-SuperiorDerecha-InferiorDerecha-InferiorIzquierda.
+Si queremos aplicar 3 redondedo bordes de distintos utilizaremos el siguiente formato: SuperiorIzquierdo-SuperiorDerechaInferiorIzquierda-InferiorDerecha.
+Si queremos aplicar 2 redondedo bordes de distintos utilizaremos el siguiente formato: SuperiorIzquierdoInferiorDerecha-SuperiorDerechaInferiorIzquierda.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			3. Box Model en CSS
