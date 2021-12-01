@@ -90,3 +90,66 @@ Si queremos aplicar 2 redondedo bordes de distintos utilizaremos el siguiente fo
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			3. Box Model en CSS
+
+1. Box Model en CSS
+Cualquier elemnto HTML esta compuesto por Box Model. Es una "caja" que se compone, de adentro hacia afuera, de los siguientes elementos: contenido-padding-border-margin. Cada uno de estos elementos que rodean al contenido tiene un width de alto y ancho.
+El padding y margin son transparentes, y el border puede tener color.
+Para calcular el alto y ancho de nuestro contenido HTML debemos tener en cuenta estos 4 elementos.
+-----------------------------------------------------------------------
+
+2. Ancho Elementos Box Model en CSS
+Al unico elemento que le podemos agregar color es al borde. El margin y padding son transparentes
+A nuestro elemento HTML le podemos asignar un ancho y un alto para predefinar cuanto lugar va a ocupar en pantalla.
+-----------------------------------------------------------------------
+
+3. Outline en CSS
+Entre el margen y el borde tenemos un concepto que se llama outline. Asi que tambien podemos establecer un outline entre el borde y el margen, tambien podemos manipular el color. Con este concepto no debemos sumar los pixeles que establezcamos para el ancho y alto del elemento. 
+Funciona y es parecido en terminos de propiedades al border (No puede combinar ciertas propiedades).
+
+No debemos sumarlo al ancho y/o alto de nuestro Box Model porque el outline va a ocupar parte de los pixeles del margen (Salvo que tenga un margen de 20px y un outline de 30px)
+
+Si me paso de outline con respecto al margo, el color que haya elegido va a solapear/superponer a los otros contenidos que coincidan en la pagina. Tampoco va a ocupar espacio como elemento de linea en HTML, el oultine estaria fuera del rango del elemento.
+-----------------------------------------------------------------------
+
+4. Outline Offset en CSS
+Podemos establecer un espacio entre nuestro concepto de outline y el border. 
+Para ello utilizaremos la propiedad de outline-offset.
+Al igual que la parte 3, existen restricciones con respecto a las propiedades en comparacion a border (todas las propiedades son seteadas de manera global, no se puede personalizar superior-derecha-inferior-izquierda).
+No podemos asignar un color, de por sí es transparente.
+-----------------------------------------------------------------------
+
+5. Padding en CSS
+El padding es posible personalizarlo de manera superior-derecha-inferior-izquierda.
+Si queremos aplicar 4 paddings distintos utilizaremos el siguiente formato: superior-derecha-inferior-izquierda.
+Si queremos aplicar 3 paddings distintos utilizaremos el siguiente formato: superior-DerechaIzquierda-inferior.
+Si queremos aplicar 2 paddings utilizaremos el siguiente formato: SuperiorInferior-DerechaIzquierda.
+-----------------------------------------------------------------------
+
+6. Box Sizing en CSS
+Para no pasarnos del ancho en el outline y no generar problemas de superposicion podemos agregar la propiedad de box-sizing.
+Con la prpiedad border-box ya no hace falta calcular el ancho y alto, la misma propiedad va a calcularla y va a ajustar nuestro elemento a los pixeles que tenga dentro de los 4 elementos de Box Model.
+-----------------------------------------------------------------------
+
+7. Propiedad max-width-height en CSS
+Si un elemento tiene X cantidad de width (ancho) y achicamos la pantalla hasta pasar a una resolucion menor al width indicado tendremos una barra de scroll horizontal en el navegador web.
+The max-width property in CSS is used to define the maximum width of an element. The value of the width cannot be larger than the value by max-width. If the content is larger than the max-width then it will go to the next line and if the content is smaller than max-width then it has no effect. (https://www.geeksforgeeks.org/css-max-width-property/)
+-----------------------------------------------------------------------
+
+8. Propiedad margin: auto para centrar elementos en CSS
+Esta propiedad es muy recurrente para centrar elementos independientemente de la resolucion de pantalla del equipo que este visualizando la pagina web.
+Tambien podemos aplicar las reglas de superior-derecha-inferior-izquierda, superior-DerechaIzquierda-inferior y SuperiorInferior-DerechaIzquierda a la propiedad de margin.
+-----------------------------------------------------------------------
+
+9. Propiedad inherit en CSS
+Esta propiedad nos permite heredar de otras propiedades declaradas en una clase CSS. La herencia funciona como una mamushka. En el ejemplo de nuestro div podemos heredar del margen ya que es el elemento externo mas cercano que tiene declarado este elemento.
+-----------------------------------------------------------------------
+
+10. Concepto de margin collapse en CSS
+Los margenes superiores e inferiores a veces pueden colapsar entre elementos, es decir, se juntan ambos margenes y provocar una "colisión".
+Es posible que el margen del elemento inferior que colisiona con el elemento superior fusione estos margenes dependiendo del tamaño del cual sea mayor.
+Insepccionar ambos elementos en el navegador.
+Mas informacion: https://www.w3schools.com/css/css_margin_collapse.asp
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			4. Manejo de Colores en CSS

@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+/*Box Model en CSS*/
+.box-model{
+    padding: 10px;
+    border: 15px solid #457b9d;
+    margin: 20px;
+}
+/*Ancho Elementos Box Model en CSS*/
+.box-model.ancho{
+    background-color: #f1faee;
+    width: 300px;
+}
+/*Outline en CSS*/
+.box-model.ancho.outline{
+    outline: 10px dotted #a8dadc;
+}
+
+/*Outline Offset en CSS*/
+.box-model.ancho.outline.offset{
+    outline-offset: 10px;
+}
+
+/*Padding en CSS*/
+.box-model.padding{
+    padding: 10px 15px 2px 6px;
+}
+
+/*Box Sizing en CSS*/
+.box-model.ancho.outline.offset.box-sizing{
+    box-sizing: border-box;
+}
+
+/*Propiedad max-width en CSS*/
+.box-model.max-widht-height{
+    max-width: 300px;
+    max-height: 50px;
+}
+
+/*Propiedad margin: auto para centrar elementos en CSS*/  
+.box-model.ancho.margin{
+    margin: auto;
+}
+
+/*Propiedad inherit en CSS*/
+.box-model.inherit{
+    margin-left: 100px;
+}
+p.interno{
+    margin-left: inherit;
+}
+
+/*Concepto de margin collapse en CSS*/
+.box-model.caja1{
+    background-color: #f1faee;
+    margin: 30px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+.box-model.caja2{
+    background-color: #f1faee;
+    max-width: 300px;
+    box-sizing: border-box;
+}
