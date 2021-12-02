@@ -1,5 +1,26 @@
 1. Manejo de Colores en CSS
+Existen 140 tipos de colores por nombre en HTML.
+Fuente: https://htmlcolorcodes.com/es/
+Con la propiedad de float vamos a poder flotar los elementos uno al lado del otro de izq/der (siempre que haya espacio) en lugar de ponerse de manera vertical cada elemento. Se vera mas adelante bien en profundidad.
 -----------------------------------------------------------------------
 
 2. Codigo de colores RGB en CSS
+Los colores RGB se componen por Red Green y Blue, nos permite una gama de ~16M de colores distintos.
+En RGBA la A sera el alpha, es decir, la transparencia que tendra nuestro color RGB. El Alpha va de 1 a 0, admite obviamente numeros flotantes.
 -----------------------------------------------------------------------
+
+3. Código de colores Hexadecimal en CSS
+El codigo hexadecimal se compone de 16 digitos (0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F).
+
+El codigo debe comenzar por el simbolo #, continuado por los 6 digitos que componen dicho codigo.
+Los 6 digitos se componen de manera parecida al RGB (#RRGGBB).
+Si nuestros digitos RRGGBB se componen del mismo simbilo hexadecimal podemos obviar el 2do digito de la composición anteriormente nombrada, si por ejemplo tuviesemos RRGGBB (ffffff) podriamos poner RGB (fff). Simplificamos pares.
+
+Tambien podemos aplicar transparencia a nuestro codigo hexadecimal. Esto funciona agregando un par mas de digitos al codigo hexadecimal.
+-----------------------------------------------------------------------
+
+4. Código de colores HSL en CSS
+HSL es un acronimo para Hue-Saturation-Lightness. Se compone de colores del 0-360, Saturation del 0-100% y Lightness del 0-100%
+Fuente de consulta: https://purple11.com/static/fed42130c194b0c240a4ec10408adf97/8282f/hsl-cover-2.png
+
+Tambien podemos aplicar transparencia, funciona de igual manera al rgb.

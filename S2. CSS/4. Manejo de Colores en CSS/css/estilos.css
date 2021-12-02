@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    color: #e63946;
+}
+
+/*Manejo de colores en CSS*/
+.caja{
+    padding: 10px;
+    color: white;/*Color por nombre*/
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 20px;
+}
+.rojo-nombre{
+    background-color: crimson;
+}
+.rosa-nombre{
+    background-color: deeppink;
+}
+
+/*Código de Colores RGB en CSS*/
+.color-rgb{
+    background-color: rgb(250, 128, 114);
+
+}
+.color-rgba{
+    background-color: rgba(250, 128, 114, .5);
+}
+
+/*Código de Colores Hexadecimal en CSS*/
+.color-hexadecimal{
+    background-color: #0091ad;
+}
+.color-hexadecimal-alpha{
+    background-color: #0091ad66;
+}
+
+/*Código de Colores HSL en CSS*/
+.color-hsl{
+    background-color: hsl(195, 100%, 50%);
+}
+.color-hsla{
+    background-color: hsla(195, 100%, 50%, .2);
+}
