@@ -1,5 +1,15 @@
 1. Manejo de Fondos en CSS
+Con la propiedades background-image, con la funcion url podemos darle el path interno/externo a nuestra imagen.
+
+Es importante saber que solo aplicando esta propiedad la imagen no se va ajustar a la resolucion de pantalla del dispositivo que este visualizandola, se duplicará la imagen para llenar el fondo X cantidad de veces.
+Para cambiar el comportamiento debemos utilizar la propiedad background-repeat: (opcion que nos sea coveniente).
+Se recomienda aplicar un color de fondo para que si la imagen no se repite se ponga un color acorde a la imagen del fondo.
 -----------------------------------------------------------------------
 
 2. Manejo de fondos en CSS - parte 2
------------------------------------------------------------------------
+Tambien podemos aplicar imagenes de fondo a cualquier elemento HTML.
+Podemos cambiar el posicionamiento inicial de nuestra imagen con background-position: (opcion).
+La propiedad background-attachament cambia el comportamiento de nuestro fondo al hacer zoom. background-attachament: fixed; Va a mantener la imagen fija al hacer scroll en la pantalla.
+
+La propiedad background engloba muchas de estas propiedades que vimos anteriormente.
+Ejemplo: background: dodgerblue url("../img/fondo.png") no-repeat right top;
