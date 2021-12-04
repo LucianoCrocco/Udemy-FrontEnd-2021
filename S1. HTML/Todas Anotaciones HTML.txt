@@ -47,6 +47,17 @@ Visual Studio Code nos da una herramienta para generar un esquema similar al vis
 <meta name="viewport" content="widht=device-width, intial-scale=1.0"/> || Etiqueta para indicar el manejo responsivo de nuestras paginas HTML. Sirve para acomodar de manera responsiva los estilos CSS y los framework como BootStrap. 
 Dependiendo del tamaño de la pantalla o del dispositivo en el que estemos trabajando, los elementos HTML se pueden acomodar de manera automatica. Este concepto es conocido como Paginas Responsivas HTML. No solo se utiliza HTML, sino que tambien se utilizan hoja de estilo CSS o frameworks CSS como BootStrap-->
 
+-----------------------------------------------------------------------
+8. Propio - head tag HTML
+The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>.
+
+The HTML <head> Element
+The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+
+HTML metadata is data about the HTML document. Metadata is not displayed.
+
+Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			2. Elementos Basicos HTML

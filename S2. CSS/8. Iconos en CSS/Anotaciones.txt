@@ -1,0 +1,8 @@
+1. Iconos de Bootstrap en CSS
+-----------------------------------------------------------------------
+
+2. Estilos de Fuentes en CSS
+Con la propiedad font-family podemos aplicar, como en word, que la letra sea del tipo normal, italic, bold, oblique, etc.
+Con la propiedad font-weight podemos darle un ancho a nuestra fuente
+La propiedad font-variant es para especificar si queremos que nuestra fuente se muestre en mayusculas, pero con el concepto de small caps
+-----------------------------------------------------------------------

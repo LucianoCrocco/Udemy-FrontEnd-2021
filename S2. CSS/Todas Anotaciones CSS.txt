@@ -222,3 +222,49 @@ La propiedad white-space tiene varios atributos accesibles, entre ellos el nowra
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			7. Fuentes en CSS
+
+1. Manejo de Fuentes en CSS
+Existen varias familias de fuentes y clasificaciones.
+La familia serif se clasifica por ser mas sofisticadas y tener redondeos en sus letras. Dan mas formalidad y elegancia.
+La familia sans-serif se clasifica por ser mas milimalista y simplificada. Da mas modernidad.
+La familia monospace se clasifica por ser utilizada para dar un aspecto mas de "maquina de escribir".
+La familia cursive se clasifica por ser de escritura cursiva.
+
+La propiedad font-family nos despliega una lista de fuentes de la misma familia, muy parecias en tipos. Si una falla o no esta disponible en el navegador web continua con la siguiente en la lista (De la mas especifica a la mas generica). Si el nombre de la fuente es compuesto, debemos utilizar comillas para indicar el nombre, de lo contrario no hace falta. 
+Ejemplo: font-family: 'Times New Roman', Times, serif;
+-----------------------------------------------------------------------
+
+2. Estilos de Fuentes en CSS
+Con la propiedad font-family podemos aplicar, como en word, que la letra sea del tipo normal, italic, bold, oblique, etc.
+Con la propiedad font-weight podemos darle un ancho a nuestra fuente
+La propiedad font-variant es para especificar si queremos que nuestra fuente se muestre en mayusculas, pero con el concepto de small caps
+-----------------------------------------------------------------------
+
+3. Tamaño Fuentes en CSS
+La propiedad font-size nos permite incrementar o decrementar el tamaño de la fuente que estamos utilizando.
+Podemos utilizar diferentes tipos de medidas o los parametros por defecto que nos provee el CSS(large, small, etc).
+Lo comun en pixeles es de 16px en navegadores.
+Una unidad de em (1em) es igual a 16px.
+Otras unidades: https://devcode.la/tutoriales/unidades-vh-vw-css/
+-----------------------------------------------------------------------
+
+4. Google Fonts en CSS
+Si no queremos utilizar ninguna de las fuentes que nos provee CSS, podemos utilizar fuentes de google -> https://fonts.google.com/.
+Utilizar fuentes externas ubicadas en internet son mas lentas para cargar y mas permeable a errores. Podemos descargar las fuentes y vincularlas al CSS para no causar estos problemas.
+
+Google fonts nos provee de uno o mas tags <link> para vincular la biblioteca de la fuente a nuestro HTML/CSS o podemos utilizar el @import de google para vincularlo a nuestro CSS (al principio dela archivo) directamente quitando el elemento de style. Se deja este elemento si vamos a utilizarlo dentro de una etiqueta.
+El mismo google fonts nos dice como utilizarlo en nuestro CSS debajo del vinculo que nos provee -> CSS rules to specify families.
+
+Al dia del realizado el curso estamos utilizando la segunda version de google fonts (css2 en el link) pero podemos importar datos de la primera version de google fonts.
+La primera version permitia utilizar efectos, los cuales se pueden ver en la documentacion.
+Guia: v1 -> https://developers.google.com/fonts/docs/getting_started | v2 -> https://developers.google.com/fonts/docs/css2
+-----------------------------------------------------------------------
+
+5. Atributo font en CSS
+Podemos poner todas las propiedades de fonts que vimos en un prinicipo en una sola linea.
+El orden es el siguiente: (font-style font-variant font-weight *font-size/line-height *font-family) | * -> Elementos requeridos si o si.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			8. Iconos en CSS
+
