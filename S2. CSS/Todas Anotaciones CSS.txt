@@ -204,3 +204,21 @@ Ejemplo: background: dodgerblue url("../img/fondo.png") no-repeat right top;
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			6. Manejo de Texto en CSS
+
+1. Formato de Texto en CSS
+Para dar formato al texto podemos cambiar la fuente, agregar sombreado, subrayado, espacio entre lineas, espacio entre palabras, espacio entre las letras, etc.
+
+Con la propiedad text-transform podemos indicar que tipo de formato (mayus, minus, mayus y minus) queremos para nuestro cuerpo de texto.
+La propiedad text-shadow genera una sombre para nuestro texto con el formato EjeX-EjeY-Blur-Color.
+La propiedad letter-spacing nos permite separar las letras entre sí, para darle un mayor espaciado. Permite tanto valores positivos como negativos.
+La propiedad word-spacing nos permite separar las palabras entre sí, para darle un mayor espaciado. Permite tanto valores positivos como negativos.
+La propiedad text-align nos permite poner mover el contenido hacia la izquierda, derecha, centro o justificarlo, entra otras cosas. Funciona como en WORD cuando queremos centrar un texto, o ponerlo hacia la izquierda, etc.
+La propiedad direction marca como empezara el texto.
+La propiedad text-decoration es mayormente utilizada en links, nos permite subrayar el texto, tacharlo, entre otras cosas.
+La propiedad text-indent va a agregar sangría al comienzo de nuestro parrafo.
+La propiedad line-height sirve para separar las lineas, por defecto es 1.2. No hace falta utilizar una medida ya que es un valor que se va a tomar de manera proporcional segun el tipo de fuente que hayamos seleccionado.
+La propiedad white-space tiene varios atributos accesibles, entre ellos el nowrap, que permite romper la caja contenedora del texto y salirse de si misma.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			7. Fuentes en CSS

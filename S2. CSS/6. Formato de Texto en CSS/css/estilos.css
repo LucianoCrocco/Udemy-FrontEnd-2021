@@ -1,0 +1,37 @@
+body{
+    background-color: wheat;
+}
+.caja-titulo{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #ef476f;
+    background-color: beige;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px #ced4da;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-decoration: underline overline;
+}
+
+.caja-parrafo{
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+.texto{
+    text-align: justify;
+    /*direction: rtl;*/
+    text-decoration: none;
+    text-indent: 20px;
+    line-height: 3;
+    white-space: normal;
+    text-shadow: 1px 1px 9px grey;
+}
