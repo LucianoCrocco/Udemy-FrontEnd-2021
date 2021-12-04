@@ -187,7 +187,7 @@ Podemos aplicar el mismo margin de izquierda a derecha eliminando los margenes s
 https://coolors.co/palettes/trending
 
 
-1. Estado y colores de los links en HTML y CSS
+8. Estado y colores de los links en HTML y CSS
 Podemos modificar el estado (azul si no lo clikeo, morado si lo clickie y rojo si lo mantengo presionado, etc) con CSS 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
