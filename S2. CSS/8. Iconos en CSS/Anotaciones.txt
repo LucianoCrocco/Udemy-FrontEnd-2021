@@ -1,8 +1,28 @@
 1. Iconos de Bootstrap en CSS
+¿Que es Boostrap? Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. A diferencia de muchos frameworks web, solo se ocupa del desarrollo front-end.
+
+Pagina de Iconos: https://icons.getbootstrap.com/ - Se puede utilizar a través de la instalación por npm, descargar por zip o importar a nuestro CSS o HTML con un link (CDN: Content Delivery Network) al igual que haciamos con las Google Fonts. 
+
+Para utilizar un icono vamos a utilizar el tag <i> y lo vamos a asociar con la clase que queremos de nuestro Bootstrap.
+Podemos importar un svg para personalizar aún mas el archivo (cambiarle el color, tamaño, etc) o hacerlo directamente en el css o etiqueta HTML.
 -----------------------------------------------------------------------
 
-2. Estilos de Fuentes en CSS
-Con la propiedad font-family podemos aplicar, como en word, que la letra sea del tipo normal, italic, bold, oblique, etc.
-Con la propiedad font-weight podemos darle un ancho a nuestra fuente
-La propiedad font-variant es para especificar si queremos que nuestra fuente se muestre en mayusculas, pero con el concepto de small caps
+2. Iconos de Google en CSS
+Su vinculacion funciona de la misma manera que Bootstrap.
+Pagina de Iconos: https://fonts.google.com/icons - https://developers.google.com/fonts/docs/material_icons
+
+A diferencia de Bootstrap, vamos a indicar el icono que queremos no como parte de una clase sino como parte de valor del tag icono. Ejemplo: <i class="material-icons">search</i>.
+La tag va a depender del icono. Google nos provee con el tag ya pre fabricado para importar.
+
+La propiedad Vertical-align nos permite alinear los elementos a un mismo eje X.
 -----------------------------------------------------------------------
+
+3. Iconos de Ionic en CSS
+¿Que es Ionic? Ionic es un SDK front-end de código abierto para desarrollar aplicaciones móviles híbridas que utilizan tecnologías web como HTML, CSS y JavaScript. Proporciona componentes basados ​​en tecnología web optimizada para dispositivos móviles, así como API nativas que utilizan Cordova e Ionic Native.
+
+Pagina de iconos: https://ionic.io/ionicons - En la solapa Usage esta todo lo que debemos saber para utilizar correctamente el framework.
+
+-----------------------------------------------------------------------
+
+4. Generalidades
+Recordemos que mientras mas vinculos de este tipo tengamos en nuestra pagina web, la pagina se vuelve mas pesada para cargar en el usuario.

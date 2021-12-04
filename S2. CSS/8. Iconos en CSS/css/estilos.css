@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    color: crimson
+}
+div{
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+}
+
+/*Iconos de Bootstrap en CSS*/
+.icono-rojo {
+    font-size: 2.85em; 
+    color: red;
+}
+
+.icono-verde {
+    font-size: 3em;
+    color: green;
+}
+
+/*Iconos de Google en CSS*/
+.icono-listo {
+    color: cornflowerblue;
+    vertical-align: bottom;
+}
+
+/*Iconos de Ionic en CSS*/
+.icono-computadora{
+    color: dimgrey;
+    vertical-align: bottom;
+    font-size: 36px;
+}
+
+.icono-javaScript{
+    color:khaki;
+    vertical-align: bottom;
+    font-size: 36px;
+}
