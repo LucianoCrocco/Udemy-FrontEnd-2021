@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 1px 3px gray;
+    color: crimson;
+}
+
+.caja {
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    display: block;
+} 
+.caja.inline{
+    display: inline;
+}
+a{
+    display: block;
+}
+li{
+    display: inline;
+}
+
+h1{
+    display: none;
+}
+h3{
+    visibility: hidden;
+}

@@ -1,2 +1,10 @@
 1. Propiedad Display en CSS
------------------------------------------------------------------------
+La propiedad display en CSS nos va a permitir mostrar u ocultar elementos o también modificar la forma en que se muestran algunos elementos HTML.
+
+Los elementos div, hX, p, listas entre otros tiene en comun que su propiedad es display: block;
+Los elementos span, anchor, links, imagenes entre otros son un elementos inline.
+display: block; -> Cada uno de estos elementos va a ocupar una nueva linea por completo.
+display: inline; -> El elemento no ocupa una nueva linea, simplemente continua a partir del otro elemento.
+
+Si queremos ocultar algun elemento HTML y que no ocupe espacio podemos hacer un display: none;
+Si queremos ocultar algun elemento HTML y que siga ocupando espacio podemos hacer: visibility: hidden;
