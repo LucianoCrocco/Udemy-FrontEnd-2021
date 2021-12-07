@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamiento de Elementos en CSS</title>
+    <title>Posicionamiento de Elementos en CSS - parte 1</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    <h1>Posicionamiento de Elementos en CSS</h1>
+<body style="padding-bottom: 70%;">
+    <h1>Centrar elementos de tipo Div en CSS</h1>
+    <div>Elemento de tipo Div</div>
+    <br>
+    <hr>
+    <h1>Posicionamiento en CSS</h1>
+    <div class="static">Elemento de tipo Div - Static</div>
+    <div class="relative">Elemento de tipo Div - Relative</div>
+    <p>Al utilizar las propiedades top, left, bottom y right tenemos que tener en cuenta que no afectará al posicionamiento de los demas elementos que pongamos a continuacion.</p>
+    <div class="fixed">Elemento de tipo Div - Fixed</div>
+    <div style="position: relative; margin: 0px; left: 20%">
+        Div padre relativo.
+        <div class="absolute">Elemento de tipo Div - Absolute</div>
+    </div>
+    <p>Test sticky</p>
+    <div class="sticky">Elemento de tipo Div - Sticky</div>
+    <p>Test sticky</p>
+    <a href="parteDos.html" target="_blank">Parte 2 de Posicionamiento de Elementos en CSS</a>
 </body>
 </html>

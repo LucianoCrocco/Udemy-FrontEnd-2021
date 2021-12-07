@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+/*Centrar elementos de tipo Div en CSS*/
+div {
+    width: 50%;
+    padding: 10px;
+    border: 3px solid firebrick;
+    margin: auto;
+}
+
+/*Posicionamiento en CSS*/
+
+div.static{
+    position: static;
+}
+
+div.relative{
+    top: 20px;
+    left: 50px;
+    position: relative;
+}
+
+div.fixed{
+    right: 0;
+    bottom: 30%;
+    position: fixed;
+}
+
+div.absolute{
+    border: 2px dashed blue;
+    width: 30%;
+    padding: 0px;
+    bottom: 5%;
+    right: 1%;
+    position: absolute;
+}
+
+div.sticky{
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+}

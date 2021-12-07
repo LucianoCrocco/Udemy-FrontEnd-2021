@@ -1,0 +1,130 @@
+h1{
+    text-align: center;
+    color:  crimson;
+}
+
+/*z-index*/
+
+div.estatico {
+    position: static;
+    top: 10px;
+    padding: 15px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke;
+}
+
+div.relativo{
+    position: relative;
+    top: -20px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+    z-index: -1;
+}
+
+div.absoluto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
+/*Ejercicio - Imagen con Texto Centrado*/
+div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 12%;
+    margin: auto;
+}
+img.imagen{
+    width: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}
+div.centro{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    z-index: 2;
+}
+
+/*Propiedad Overflow en CSS*/
+div.contenedorDos{
+    border: 3px dashed greenyellow;
+    width: 12%;
+    height: 100px;
+    margin: auto;
+    overflow: auto;
+}
+
+/*Float en CSS*/
+
+div.caja-float{
+    width: 30%;
+    height: 100px;
+    overflow: auto;
+}
+
+div.caja-float.flotado{
+    float: left;
+}
+
+div.caja-float.flotado.contenedor1{
+    border: 3px dashed greenyellow;
+}
+
+div.caja-float.flotado.contenedor2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+
+div.caja-float.contenedor3{
+    clear: both;
+    border: 3px dashed darkorange;
+    margin: auto;
+}
+
+/*Propiedad Display Inline-Blocke en CSS*/
+div.contenedorDisplay{
+    width: 80%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border: 3px dashed #a8dadc;
+}
+
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    background-color: #a8dadc;
+    border: 3px solid #457b9d;
+    height: 50px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.menu{
+    list-style: none;
+    text-align: center;
+}
+.menu li {
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: #e63946;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #f1faee;
+}

@@ -301,3 +301,63 @@ Recordemos que mientras mas vinculos de este tipo tengamos en nuestra pagina web
 
 			9. Display  en CSS
 
+1. Propiedad Display en CSS
+La propiedad display en CSS nos va a permitir mostrar u ocultar elementos o también modificar la forma en que se muestran algunos elementos HTML.
+
+Los elementos div, hX, p, listas entre otros tiene en comun que su propiedad es display: block;
+Los elementos span, anchor, links, imagenes entre otros son un elementos inline.
+display: block; -> Cada uno de estos elementos va a ocupar una nueva linea por completo.
+display: inline; -> El elemento no ocupa una nueva linea, simplemente continua a partir del otro elemento.
+
+Si queremos ocultar algun elemento HTML y que no ocupe espacio podemos hacer un display: none;
+Si queremos ocultar algun elemento HTML y que siga ocupando espacio podemos hacer: visibility: hidden;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			10. Posicionamiento de Elementos con CSS
+
+1. Centrar elementos de tipo Div con CSS
+Una ventaja de utilizar porcentajes y no pixeles es que se adapta a la resolucion de pantalla en la cual se despliega el navegador.
+-----------------------------------------------------------------------
+
+2. Posicionamiento en CSS
+Existen 5 tipos de posicionamientos en CSS: static, relative, fixed, absolute y sticky.
+Por defecto todos los elementos de tipo div son estaticos. Las propiedades top, bottom, left y right no se aplican a los elementos estaticos, si a los demas.
+
+Al utilizar las propiedades top, left, bottom y right tenemos que tener en cuenta que no afectará al posicionamiento de los demas elementos que pongamos a continuacion. 
+
+La posicion static matendra el div en la posicion por default, sin poder modificar su posicion.
+La posicion relative mantendra el div en la posicion por default o la que le indiquemos en el CSS. 
+La posicion fixed se va a colocar de manera relativa al viewport. Se va a mantener de manera fija en la posicion de pantalla que le indicamos/que tiene por default. Si tenemos un scroll vertical y utilizamos el scroll, este elemento va a bajar conforme se utilice la barra de scroll.
+La posicion absolute es similar a la static, se utiliza normalmente cuando estamos trabajando dentro de otro elemento de tipo div. El absolute se va a posicionar de manera "absoluta", pero teniendo en cuenta el elemento que lo contiene. Si no lo contiene ningún elemento se va a tomar en cuenta el body (En este caso, si solo tiene el body es una buena practica utilizar el default). El absolut no funciona si su div padre es static. Se va comportar como un elemento de linea.
+La posicion sticky se caracteriza por tener que usar alguna de las propiedades de top, left, bottom, right. Se posiciona como un elemento de manera relativa y a la hora de mover la pantalla se utiliza como un elemento de manera fixed. Si trabajamos con safari debemos tener en cuenta una correccion, debemos agregar position: -webkit-sticky;. La posicion sticky no funciona en Internet Explorer
+-----------------------------------------------------------------------
+
+3. z-index en CSS
+Hasta ahora trabajamos con el eje de X (horizontal) y el eje Y (vertical). El eje Z representa las capas de profundidad de un elemento dado.
+En el eje Z se van a ir supernoniendo los elementos segun coincidan y segun el orden en que se van agregando se van a ir supernoniendo. Sin embargo, la superposicion va a depender de varios factores. Los elementos static son elementos no posicionados, en cambio cuando es diferente la propiedad decimos que son posicionados. Por default se agregan de manera automatica pero podemos personalizarlo (tanto negativo como positivo), tambien podemos personalizar tamaño del z-index. 
+
+La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor. - https://developer.mozilla.org/es/docs/Web/CSS/z-index
+----------------------------------------------------------------------- 
+4. Propiedad overflow en CSS
+El concepto de Overflow en CSS ocurre cuando tenemos un contenido que supera el ancho de nuestro contenedor. Solamente la podemos trabajar si especificamos un alto/height de nuestro contenedor (se necesita un limitante vertical). 
+La propiedad por default es overflow: visible; Que mostrara el contenido que supera el contenedor.
+La propiedad overflow: hidden; Todo lo que se sale del contenedor se ocultará.
+La propiedad overflow: scroll; Generara un scroll para poder moverse de manera vertical y/o horizontal y visualizar todo el contenido.
+La propiedad overflow: auto; Si se necesita un scroll se genera automaticamente de manera vertical y/o horizontal.
+
+Las mismas propiedades aplican para overflow-x u overflow-y, de necesitar especificamente un eje.
+
+----------------------------------------------------------------------- 
+5. Float en CSS
+En ocasiones es necesario acomodar nuestros elementos de manera flotada. Esto nos permite agregar muchos elementos en una sola. Cuando no tiene mas espacio disponible para agrupar los elementos flotados genera una nueva linea. "La propiedad float se comporta globalmente y no en el scope" -> No se si es así realmente, averiguar.
+Si queremos que los demas elementos que siguen ya no esten flotando vamos a utilizar la propiedad clear indicando si queremos limpiar el lado izquierdo, derecho o ambos.
+----------------------------------------------------------------------- 
+
+6. Propiedad Display Inline-Blocke en CSS
+Ya trabajamos con propiedades display inline y block, esta propiedad es combinada de ambas. La utilizaremos para combinar ambas propiedades y quitar las restricciones que estas poseen. Se comportara como un elemento de linea pero podremos agregarle propiedades de un elemento de bloque.
+No serviria, por ejemplo, para asignarle un margen, padding, etc. A un elemento "inline".  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			11. Selectores en CSS
