@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    columns: #457b9d;
+}
+
+/*Selector Descendiente*/
+div.contenedor.descendiente p {
+    background-color: #fdffb6;
+}
+
+/*Selector Child*/
+div.contenedor.hijo > p {
+    background-color: #ffc6ff;
+}
+
+/*Selector Sibiling en CSS*/
+div.contenedor.adyacente + p {
+    background-color: #caffdf;
+}
+
+div.contenedor.hermano ~ p {
+    background-color: #9bd6ff;
+}
+
+/*Pseudo clases en CSS*/
+div.contenedor.pseudoClase:hover{
+    background-color: #457b9d;
+    color: #f1faee;
+}
+div.contenedor.pseudoClase.oculto p {
+    display: none;
+}
+
+div.contenedor.pseudoClase.oculto:hover p {
+    display: block;
+    background-color: #a8dadc;
+    color: #023e8a;
+    padding: 15px;
+}
+
+div.contenedor.primero p:first-child {
+    font-variant: small-caps;
+}
+
+/*Pseudo elementos en CSS*/
+div.contenedor p::selection{
+    color: red;
+    background-color: yellow;
+}
+
+div.contenedor p::first-line{
+    color: red;
+    font-variant: small-caps;
+}
+
+div.contenedor p::first-letter{
+    font-size: 1.5em;
+}
+
+div.contenedor p::before {
+    content: "- ";
+}
+
+div.contenedor p::after {
+    content: " -";
+}
+
+/*Transparencia de Imágenes en CSS*/
+div.contenedor.imagen {
+    width: max-content;
+}
+img{
+    opacity: 0.5;
+}
+
+div.contenedor.imagen img:hover{
+    opacity: 1;
+}

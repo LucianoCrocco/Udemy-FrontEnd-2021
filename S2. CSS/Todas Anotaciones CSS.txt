@@ -360,4 +360,44 @@ No serviria, por ejemplo, para asignarle un margen, padding, etc. A un elemento 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-			11. Selectores en CSS
+			11. Selectores Combinados en CSS
+
+1. Selectores Descendientes en CSS
+El selector combinado descendiente hace que una vez seleccionado un elemento se va a aplicar el estilo que hayamos configurado para todos los elementos descendientes sin importar si son directos o indirectos, es decir, son elementos hijos y a su vez elementos dentro de otros elementos (todos los nested elements dentro del descendiente).
+Ejemplo: div.contenedor.descendiente p
+-----------------------------------------------------------------------
+
+2. Selector Child en CSS
+El selector descendiente aplica a todos los elementos, sin importar si son elementos hijos directos del elemento o si son hijos de otro elemento ("hijo indirecto", siempre y cuando este englobado por mi selector descendiente). En cambio con el selector child solo va a afectar a los "hijos directos" y no a los indirectos.
+Ejemplo: div.contenedor.hijo > p | Con el simbolo > indicamos que vamos a seleccionar los hijos directos del elemento que indiquemos.
+-----------------------------------------------------------------------
+
+3. Selector Sibiling en CSS
+El selector Sibiling/Adyacente únicamente va a seleccionar al elemento que esté directamente después del elemento que hemos configurado. Tiene que estar exactemente despues. Deben tener el mismo padre en comun (x ejemplo el body).
+
+También tenemos el Selector general, que permite seleccionar mas de un tag adyacente siempre y cuando sea del mismo tipo y se encuentre en el mismo nivel.
+
+Ejemplo: div.contenedor.adyacente + p | El simbolo + indica que solo vamos a seleccionar los elementos del tipo. Si no lo utilizamos va a tener un tipo generico y va a agarrar el primer elemento que se encuentre despues.
+
+div.contenedor.hermano ~ p | Selector hermano permite seleccionar mas de un parrafo del mismo tipo seleccionado, siempre y cuando se encuentren al mismo nivel.
+-----------------------------------------------------------------------
+
+4. Pseudo Clases en CSS
+Las pseudo clases nos va a permitir manipular ciertos estados de nuestros elementos HTML. Por ejemplo pasar por encima de un elemento de tipo div el cursor, hacer que cambie de color, o como se comporta cuando tiene click, etc.
+
+Con el : se manejan los estados de los elementos HTML. https://www.w3schools.com/css/css_pseudo_classes.asp
+-----------------------------------------------------------------------
+
+5. Pseudo Elementos en CSS
+Los Pseudo Elementos nos permiten agregar estilo a ciertos elementos HTML. Sin embargo estos estilos que vamos a agregar son de maneras mas particulares de lo que hemos visto con Pseudo Clases. Por ejemplo, podemos agregar un cierto elemento antes o después de un elemento seleccionado de tipo HTML, o también, por ejemplo, podemos modificar la primera letras de un párrafo, la primer linea, etc.    
+
+Con el :: se manejan los estilos del elemento HTML. https://www.w3schools.com/css/css_pseudo_elements.asp
+
+-----------------------------------------------------------------------
+
+6. Transparencia de Imágenes en CSS
+Al igual que con los pseudo elementos, podemos modificar imagenes para cambiar su transparencia, posicionamiento, etc. Según nosotros querramos. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			12. Gradientes en CSS

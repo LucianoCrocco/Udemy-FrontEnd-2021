@@ -8,6 +8,71 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Selectores en CSS</h1>
+    <h1>Selectores Descendientes en CSS</h1>
+    <div class="contenedor descendiente">
+        Selector descendiente (en cualquier nivel interno);
+        <p>Primer renglón</p>
+        <p>Segundo renglón</p>
+        <section>
+            <p>Tercer renglón envuelto en un section</p>
+        </section>
+    </div>
+    <br>
+    <hr>
+    <h1>Selector Child en CSS</h1>
+    <div class="contenedor hijo">
+        Selector hijo (solo los directos);
+        <p>Primer renglón</p>
+        <p>Segundo renglón</p>
+        <section>
+            <p>Tercer renglón envuelto en un section</p>
+        </section>
+    </div>
+    <br>
+    <hr>
+    <h1>Selector Sibiling en CSS</h1>
+    <div class="contenedor adyacente">
+        Selector adyacente;
+        <p>Primer renglón</p>
+        <section>
+            <p>Segundo renglón envuelto en un section</p>
+        </section>
+    </div>
+    <p>Tercer renglón</p>
+    <p>Cuarto renglón</p>
+    <div class="contenedor hermano">
+        Selector adyacente;
+        <p>Primer renglón</p>
+        <section>
+            <p>Segundo renglón envuelto en un section</p>
+        </section>
+    </div>
+    <p>Tercer renglón</p>
+    <p>Cuarto renglón</p>
+    <br>
+    <hr>
+    <h1>Pseudo Clases en CSS</h1>
+    <div class="contenedor pseudoClase oculto">
+        Pasa por encima
+        <p>Se muestra el párrafo</p>
+    </div>
+    <div class="contenedor primero">
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
+    </div>
+    <br>
+    <hr>
+    <h1>Pseudo Elementos en CSS</h1>
+    <div class="contenedor">
+        <p>Selecciona el texto.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia obcaecati est voluptate dolore cum voluptates aliquid reprehenderit non quidem placeat harum iste pariatur, nisi, optio modi corrupti? Quibusdam, quisquam voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odit labore fugiat recusandae qui eaque tempore asperiores, ullam illo quas aliquam placeat laboriosam possimus. Doloremque voluptatum consectetur necessitatibus! Ab, tempore!</p>
+    </div>
+    <br>
+    <hr>
+    <h1>Transparencia de Imágenes en CSS</h1>
+    <div class="contenedor imagen">
+        <p>Pasa encima de la imágen</p>
+        <img src="http://globalmentoring.com.mx/imagenes/html5.png" alt="Logo HTML">
+    </div>
 </body>
 </html>
