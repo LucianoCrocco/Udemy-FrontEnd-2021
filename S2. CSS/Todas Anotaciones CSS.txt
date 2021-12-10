@@ -429,3 +429,25 @@ Al igual que el text shadow, los ejes aceptan coordenadas negativas.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			13. Flexbox en CSS
+
+1. Flexbox en CSS
+El concepto de flexbox nos va a permitir agregar elementos dentro de otros elementos. Por ejemeplo un contenedor div y dentro del mismo parrafos, otros contenedores, etc.
+Es una caja flexible que permite la introduccion de otros elementos dentro de la misma. Es muy util por ejemplo para flotar elementos, ya que anteriormente sin los flexbox debiamos volver a especificar que no queriamos que se flotara la siguiente y era permeable a errores.
+
+Para que un contenedor aplique este concepto debemos utilizar la propiedad display: flex;
+Por default se cargan de izquierda a derecha.
+
+flex-direction: X; Cambia el sentido en el cual se van a agrgar, si en forma de columna, fila, etc.
+Con la propiedad flex-wrap: wrap; decidimos que si nuestra pantalla se hace mas pequeña los elementos pasan a otro renglon o no.
+El flew-flow: (DIRECTION) (WRAP) engloba ambas propiedades.
+
+La propiedad justify-content indica como se van a empezar a acomodar los elementos segun vayamos cargando tags, de izquierda a derecha, hacia el centro, con espacios entre medio, con espacios entre ellos y los lados, etc.
+
+Por default nuestros elementos se alrgan y se adeucan al height de nuestro flexbox, si no queremos que esto ocurra la propiedad align-items: flex-start; Tambien contiene otras propiedades para ajustar los elementos. Alinea los elementos de manera horizontal.
+
+La propiedad aling-content es el espacio que tenemos entre nuestros elementos de manera vertical, funciona parecido al aling-items.
+
+La propiedad order dentro de un elemento HTML va a modificar como se van a ordenar los elementos dentro del flexbox. Por default tiene el valor de 0 y segun como los vayamos declarando se van a ir agregando.
+Con la propiedad flex-group podemos indicar que algun elemento ocupe mayor espacio que los otros elementos. Funciona sobre el eje X. Ejemplo: flex-grow: 3;
+La propiedad flex-basis funciona de de igual manera que flex-group pero con unidades de mediciones como los pixeles. Ejemplo: flex-basis: 100px;
+Con la propiedad de aling-self vamos a poder alinear un item independiente segun querramos, funciona parecido al aling-items. 

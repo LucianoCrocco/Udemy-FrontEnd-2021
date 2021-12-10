@@ -1,0 +1,9 @@
+Pagina web compementaria: https://www.w3schools.com/js/default.asp
+
+A tener en cuenta: Algunas clases no van a tener anotaciones ya que son conceptos que ya adquirí. A diferencia de las otras 2 secciones esta va a tener apuntes sueltos y no toda una expliación. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			1. Introducción a JavaScript
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
