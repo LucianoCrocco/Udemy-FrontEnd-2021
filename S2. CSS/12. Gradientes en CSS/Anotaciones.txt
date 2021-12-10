@@ -1,2 +1,21 @@
 1. Gradientes en CSS
+Podemos utilizar gradientes lineales o gradientes radiales. https://www.w3schools.com/css/css3_gradients.asp - Generador online: https://html-css-js.com/css/generator/ o https://cssgenerator.org/
+
+Gradiente lineal: background: linear-gradient(El color inicial, color que finaliza);
+background: linear-gradient(to X,#f72585,  #3a9ca3); | X = derecha, izquierda, arriba, abajo.
+background: linear-gradient(El color inicial, color intermedio, color que finaliza); 
+background: linear-gradient(to X Y, #f72585,  #3a9ca3); | Podemos indicar que sea to bottom right para que sea cruzado.
+background: linear-gradient(Xdeg, #f72585,  #3a9ca3); | Parecido al anterior, le proporcionamos un angulo.
+background: radial-gradient(circle, #0d47a1,  #42a5f5); | Un degrade del centro hacia fuera.
 -----------------------------------------------------------------------
+
+2. Sombras en CSS
+Como vimos lecciones anteriores, podemos agregar sombras a nuestro HTML con la propiedad text-shadow.
+La propiedad se compone de text-shadow: EjeX EjeY Blur COLOR;. Generara una sombra y la podemos mover y blurrear como se muestra mas arriba. Los ejes aceptan coordenadas negativas.
+Ejemplo: text-shadow: 2px 2px 3px green;
+
+-----------------------------------------------------------------------
+
+3. Box Shadow en CSS
+Con la propiedad box-shadow vamos a poder agregar una sombra a un el elemento HTML, comunmente se utiliza en la etiqueta div. Funciona de manera similar al text-shadow pero tenemos un atributo mas que podemos aplicar para hacer mas grande la sombra. Se compone de la siguiente manera: box-shadow: EjeX EjeY blur SOMBRA COLOR;
+Al igual que el text shadow, los ejes aceptan coordenadas negativas. 

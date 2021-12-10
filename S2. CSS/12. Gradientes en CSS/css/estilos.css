@@ -1,0 +1,32 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+/*Gradientes en CSS*/
+body{
+    /* background: linear-gradient(#f72585,  #3a9ca3); */
+    /* background: linear-gradient(to right,#f72585,  #3a9ca3); */
+    /* background: linear-gradient(#24404d, #6dbff1,  black);  */
+    /* background: linear-gradient(to bottom right, #f72585,  #3a9ca3); */
+    /* background: linear-gradient(145deg, #f72585,  #3a9ca3); */
+    background: radial-gradient(circle, #0d47a1,  #42a4f583);
+    color: #f1faee;
+}
+/*Estilos*/
+h1{
+    text-align: center;
+    /*Sombras en CSS*/
+    text-shadow: 2px 2px 5px coral;
+    color: aliceblue
+}
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 0px 10px 2px red;
+    color: beige;
+    border-radius: 15px;
+}
