@@ -1,11 +1,3 @@
-Pagina web compementaria: https://www.w3schools.com/js/default.asp
-
-A tener en cuenta: Algunas clases no van a tener anotaciones ya que son conceptos que ya adquirí. A diferencia de las otras 2 secciones esta va a tener apuntes sueltos y no toda una expliación. 
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-			1. Introducción a JavaScript
-
 1. Introducción a JavaScript
 
 JavaScript es un lenguaje de programación interpretado, el cual puede ser ejecutado y entendido por navegadores web. Es uno de los lenguajes mas utilizados para navegadores.
@@ -28,7 +20,3 @@ Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript pro
 3. Diferencia entre var y let en JavaScript
 
 let te permite declarar variables limitando su alcance (scope) al bloque, declaración, o expresión donde se está usando. a diferencia de la palabra clave var la cual define una variable global o local en una función sin importar el ámbito del bloque. Source: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/let
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-			2. Tipos de Datos en JavaScript

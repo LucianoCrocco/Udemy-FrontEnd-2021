@@ -1,0 +1,2 @@
+Las variables declaradas como "var" en JavaScript se conocen como variables dinamicas. Esto quiere decir que en cualquier momento vamos a poder asignarle un nuevo valor a una variable previamente asignada con distinto tipo de dato. 
+-----------------------------------------------------------------------
