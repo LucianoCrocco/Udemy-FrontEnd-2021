@@ -57,3 +57,9 @@ Para que las conversiones puedan realizarse de manera correcta debemos verificar
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			3. Sentencias de Control en JavaScript
+
+Podemos utilizar etiquetas o labels para indicar donde quiero que vaya el programa despues de, por ejemplo, un continue. No es una buena practica. Se declara de la siguiente manera: Inicio:. Se la conoce como goto.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			4. Arreglos en JavaScript

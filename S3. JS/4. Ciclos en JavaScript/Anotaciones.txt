@@ -1,0 +1,1 @@
+Podemos utilizar etiquetas o labels para indicar donde quiero que vaya el programa despues de, por ejemplo, un continue. No es una buena practica. Se declara de la siguiente manera: Inicio:. Se la conoce como goto.
