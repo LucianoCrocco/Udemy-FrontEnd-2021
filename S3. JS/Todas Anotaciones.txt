@@ -32,3 +32,28 @@ let te permite declarar variables limitando su alcance (scope) al bloque, declar
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			2. Tipos de Datos en JavaScript
+
+Las variables declaradas como "var" en JavaScript se conocen como variables dinamicas. Esto quiere decir que en cualquier momento vamos a poder asignarle un nuevo valor a una variable previamente asignada con distinto tipo de dato. 
+
+Symbol es un tipo de datos cuyos valores son únicos e immutables. Dichos valores pueden ser utilizados como identificadores (claves) de las propiedades de los objetos.  Cada valor del tipo Symbol tiene asociado un valor del tipo String o Undefined que sirve únicamente como descripción del símbolo. Source: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+
+Las clases tambien se consideran funciones en JavaScript.
+
+Las variables Undefined son variables declaradas que no estan asociadas a ningún valor.
+
+Null no es un tipo de dato es un tipo object.
+
+Los arrays en JavaScript son de tipo object.
+
+La palabra reservada var la utilizamos para declarar variables, sin embargo hoy en dia no se considera una buena práctica. Sustituyendo esta palabra tenemos las palabras reservadas let para una variable y const para una constante.
+En JavaScript es posible declarar una variable sin asignarle una palabra reservada. No se recomienda ya que no es una buena práctica. Buenas prácticas son usar let y const hoy en dia.
+
+El operador de comparación === y !== revisa los valores pero también los tipos. Ejemplo: a = 3 - c = "3" -> a==c -> true | a===c -> false.
+
+Dentro de la clase Number podemos parsear strings a numeros.
+
+Para que las conversiones puedan realizarse de manera correcta debemos verificar que la cadena sea un numero, para ello tenemos la herramientat IsNan que significa IsNotANumber.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			3. Sentencias de Control en JavaScript
