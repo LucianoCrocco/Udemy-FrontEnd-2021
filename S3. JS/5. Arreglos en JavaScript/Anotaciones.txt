@@ -1,0 +1,4 @@
+Los arrays en JavaScript se comportan como listas dinamicas de C#
+let autos = new Array("BWM", "Mercedes Benz", "Volvo"); Es una practica vieja para declarar una array y ya no se recomienda utilizarla.
+const autosDos = []; Es la forma que se recomienda. La constante va a almacenar la referencia de memoria del array.
+ 

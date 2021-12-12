@@ -1,0 +1,24 @@
+Definicion funciones anonimas: An anonymous function is a function without a name. An anonymous function is often not accessible after its initial creation.
+
+Las funciones aplican el concepto de Hoisting. El Hoisting definir nuestra funcion en cualquier parte del programa y la vamos a poder mandar a llamar, ya sea antes de definirla y despues.
+Ejemplo de declaracion de funcion: function NOMBRE(PARAMETROS){CUERPO}
+
+Las funciones de tipo expresion se utilizan cuando definimos una variable y declaramos una funcion en la misma linea, esta variable va a llamar a la funcion cuando la utilicemos, guarda la referencia de la variable. Se la considera una funcion anonima.
+Ejemplo: let sumar = function(a,b){return a+b}; | let resultado = sumar(4,4);
+
+Las funciones self invoking se mandan a llamar a si mismas. Ejemplo:
+(function (VARIABLES) {
+    console.log("Ejecutando la funcion");
+})(PARAMETROS);
+Con los parentesis al final se manda a llamar a si misma, es una funcion anonima que no se puede reutilizar.
+
+Las funciones puede ser descritas como objetos y los objetos en JavaScript pueden tener propiedades y métodos asociados a cada uno de los objetos. 
+La propiedad arguments.length dentro de la funcion nos dice cuantos elementos recibe nuestra funcion.
+
+La función flecha es una función anonima que aplica Lambda. Es recomendable que la variable asociada a nuestro Lambda sea de tipo const.
+Ejemplo de declaracion: const NOMBRE = (PARAMETROS) => (CUERPO); El return puede ser implicito si es una sola linea de codigo o explicito si tenga mas de una linea de codigo.
+
+En JavaScript no es requerido que coincidan el numero de argumentos (variables a la hora de llamar a la funcion) con el numero de parametros (firma de la funcion).
+Las funciones pueden tener parametros con valores predefindos, en caso de no pasar argumentos o pasar menos de los que tengo en mi funcion estos se mantienen y no se pisan.
+
+Los tipos primitivos son aquellos datos que no tienen propiedades ni metodos, ni se le pueden asociar.
