@@ -1,5 +1,8 @@
 Definicion funciones anonimas: An anonymous function is a function without a name. An anonymous function is often not accessible after its initial creation.
 
+Parametros vs Argumentos: A parameter is the variable which is part of the method’s signature (method declaration). An argument is an expression used when calling the method.
+
+
 Las funciones aplican el concepto de Hoisting. El Hoisting definir nuestra funcion en cualquier parte del programa y la vamos a poder mandar a llamar, ya sea antes de definirla y despues.
 Ejemplo de declaracion de funcion: function NOMBRE(PARAMETROS){CUERPO}
 

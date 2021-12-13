@@ -1,0 +1,34 @@
+Básicamente la diferencia entre un tipo primitivo, como puede ser un tipo numérico y un objeto, es que el tipo primitivo no contiene propiedades ni tampoco métodos.
+Un objeto puede contener propiedades y métodos.
+
+Otra manera de acceder a propiedades en JS, aparte del ., es accediendo como si fuese un array poniendo entre los corchetes el nombre de la propiedad. Esto nos permite recorrer la matriz con un for.
+Ejemplo accediendo a la propiedad: persona['nombre'];
+Ejemplo recorrer con un for:
+for(propiedades in persona){
+    console.log(persona);//Muestro todas las propiedades, genera que se itere un string con todos los datos * cantida de propiedades
+    console.log(persona[propiedades]); //Muestro linea por linea cada una de las propiedades.
+}
+
+En JavaScript se puede agregar propiedades simplemente haciendo OBJETO.PROPIEDAD, con el operador . como se ve. Permeable a muchisimos errores.
+Con la palabra reservada delete OBJETO.PROPIEDAD podemos eliminar una propiedad, tambien es muy permeable a errores.
+
+El metodo Object.values(OBJETO) nos devuelve un array con todas propiedades definidas en nuestro objeto.
+El metodo JSON.stringify(OBJETO) nos devuelve una cadena en formato JSON con las propiedades y sus valores.
+
+La sintaxis del get es muy similar a la de C#. Utilizamos la palabra reservada get. Ejemplo de get: get nombre() {return this.nombre;} - get nombreCompleto (){return this.nombre + " " + this.apellido}. 
+
+Los setters de igual manera que en C# funcionan de manera muy similar. Ejemplo: set Language(lang) {this.idioma = lang.toUpperCase();}
+
+Si queremos generar constructores POR FUERA de una clase podemos generar una funcion. Ejemplo: function Persona(nombre, apellido, email){this.nombre = nombre; this.apellido = apellido;this.email = email;} y utilizando la palabra new se lo asignamos a una variable: let persona = new Persona("Juan", "Perez", "jperez@mail.com");
+
+En JavaScript se puede poner directamente los simbolos {} para genarar el espacio en memoria, sin utilizar new. Ejemplo: let miObjeto = {}; Lo mismo aplica para los demas tipos de datos con sus caracteres respectivos, por ejemplo con un array: let miArray = [];
+En general cada tipo de dato tiene su constructor de clase pero muchas veces no lo utilizamos, utilizamos directamente las conversiones implicitas que nos provee JavaScript. 
+
+Si queremos agregar un atributo/propiedad durante el transcurso del programa que afecte a todos los objetos del mismo tipo y no queremos editar el constructor (Horrible practica de programacion), podemos utilizar la propiedad de Prototype. Ejemplo: Persona.prototype.tel;
+
+El metodo call nos va a permitir llamar a un metodo que esta definido en un objeto desde otro objeto. Es decir, vamos a poder utilizar una funcion definida en OBJETO1 y utilizarla con los parametros de OBJETO2. Ejemplo: OBJETO1.FUNCION.call(OBJETO2);
+
+Tambien podemos pasarle argumentos a nuestra funcion call cuando vayamos a utilizar metodos definidos en otro objeto, esto se logra simplemente poniendo una , luego del objeto que queremos aplicarle el metodo de otro objeto. Ejemplo: OBJETO1.MEOTOD.call(OBJETO2, ARGUMENTO, N CANTIDAD DE ARGUMENTOS);
+
+El metodo apply funciona como el metodo call pero con una diferencia. El metodo apply requiere de un array con los argumentos que vayamos a utilizar.
+Ejemplo: OBJETO1.FUNCION.apply(OBJETO2, ARRAY);
