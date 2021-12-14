@@ -177,3 +177,16 @@ En JavaScript por defecto todas las clases heredan implicitamente de Object, est
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			9. Palabra Static en JavaScript	
+
+Para definir un metodo estatico (de clase) simplemente utilizamos la palabra static al comienzo de la firma del metodo.
+
+Para definir un atributo estatico debe estar precedido por la palabra static.
+
+Podemos agregar atributos por fuera de nuestra constructor, siendo estos atributos de los objetos.
+Se pueden crear atributos estaticos al boleo si cometemos un error a la hora de llamar a la clase con la variable asociada.
+
+Para definir un metodo statico que se mantenga constante podemos hacer un static get VARIABLE(){CUERPO} para poder tener un atributo constante estatico no modificable.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			10. Ejercicio de Herencia en JavaScript	
