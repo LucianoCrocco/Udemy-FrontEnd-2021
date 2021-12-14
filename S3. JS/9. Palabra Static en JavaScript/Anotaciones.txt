@@ -1,0 +1,1 @@
+Para definir un metodo estatico (de clase) simplemente utilizamos la palabra static al comienzo de la firma del metodo. 

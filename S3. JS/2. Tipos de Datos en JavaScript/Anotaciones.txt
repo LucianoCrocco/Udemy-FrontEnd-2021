@@ -1,4 +1,4 @@
-Las variables declaradas como "var" en JavaScript se conocen como variables dinamicas. Esto quiere decir que en cualquier momento vamos a poder asignarle un nuevo valor a una variable previamente asignada con distinto tipo de dato. 
+Las variables declaradas en JavaScript se conocen como variables dinamicas. Esto quiere decir que en cualquier momento vamos a poder asignarle un nuevo valor a una variable previamente asignada con distinto tipo de dato. 
 
 Symbol es un tipo de datos cuyos valores son únicos e immutables. Dichos valores pueden ser utilizados como identificadores (claves) de las propiedades de los objetos.  Cada valor del tipo Symbol tiene asociado un valor del tipo String o Undefined que sirve únicamente como descripción del símbolo. Source: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Symbol
 

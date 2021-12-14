@@ -33,7 +33,7 @@ let te permite declarar variables limitando su alcance (scope) al bloque, declar
 
 			2. Tipos de Datos en JavaScript
 
-Las variables declaradas como "var" en JavaScript se conocen como variables dinamicas. Esto quiere decir que en cualquier momento vamos a poder asignarle un nuevo valor a una variable previamente asignada con distinto tipo de dato. 
+Las variables declaradas en JavaScript se conocen como variables dinamicas. Esto quiere decir que en cualquier momento vamos a poder asignarle un nuevo valor a una variable previamente asignada con distinto tipo de dato. 
 
 Symbol es un tipo de datos cuyos valores son únicos e immutables. Dichos valores pueden ser utilizados como identificadores (claves) de las propiedades de los objetos.  Cada valor del tipo Symbol tiene asociado un valor del tipo String o Undefined que sirve únicamente como descripción del símbolo. Source: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Symbol
 
@@ -148,3 +148,32 @@ Ejemplo: OBJETO1.FUNCION.apply(OBJETO2, ARRAY);
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			8. Clases en JavaScript	
+
+Las clases se declaran como en C# pero sin definir el scope.
+Ejemplo: class X {Constructor-Atributos-Metodos}
+Para generar un constructor vamos a utilizar la palabra reservada constructor.
+Ejemplo: constructor(PARAMETROS){CUERPO}
+A diferencia de C# los atributos los podemos definir dentro del constructor con this.ATRIBUTO.
+
+Se recomienda usar un _ antes del nombre del atributo para que este no coincida con la propiedad.
+
+Cuando trabajamos con clases no se aplica el concepto de Hoisting. Primero debemos definir nuestra clase para poderla utilizar.
+
+https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado
+
+La sintaxis de herencia en JavaScript es: class HIJA extends PADRE.
+Para llamar al constructo de la clase padre utilizamos la palabra reservada super en la primera linea despues de declrar el constructor en la clase hija. Ejemplo: 
+constructor(nombre, apellido, departamento){
+    super(nombre, apellido);
+}
+
+Simplemente poniendo el nombre del metodo ya se esta definiendo.
+Ejemplo: NombreCompleto(){}
+
+Para sobreescribir un metodo podemos hacer volvemos a utilizar la palabra super. Ejemplo: NombreCompleto(){ return super.NombreCompleto() + " " + this._departamento}. Podemos obviar el super si es una clase padre.
+
+En JavaScript por defecto todas las clases heredan implicitamente de Object, esto ocurre si no tiene un extends explicito. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			9. Palabra Static en JavaScript	
