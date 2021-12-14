@@ -1,0 +1,2 @@
+En JavaScript para que podamos ejecutar clases en diferentes archivos necesitamos manejar el concepto de módulos. Y para manejar el concepto de módulos necesitamos desplegar nuestra aplicación en un servidor.
+Más adelante vamos a poder como podemos separar las clases en diferentes archivos y ejecutarlas por separado.

@@ -190,3 +190,10 @@ Para definir un metodo statico que se mantenga constante podemos hacer un static
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			10. Ejercicio de Herencia en JavaScript	
+
+En JavaScript para que podamos ejecutar clases en diferentes archivos necesitamos manejar el concepto de módulos. Y para manejar el concepto de módulos necesitamos desplegar nuestra aplicación en un servidor.
+Más adelante vamos a poder como podemos separar las clases en diferentes archivos y ejecutarlas por separado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			11. Sistema de Ventas con JavaScript	
