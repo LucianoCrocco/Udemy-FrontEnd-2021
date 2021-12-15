@@ -1,0 +1,1 @@
+El modo estricto de JavaScript no deja que usemos variables sin antes haberlas declarado. Se utiliza poniendo al principio de nuestro archivo de extensión .js "use strict";

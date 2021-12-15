@@ -1,0 +1,1 @@
+Iterar una lista en JavaScript se hace definiendo una variable y utilizando la palabra reservada of. Ejemplo: let item of this._productos

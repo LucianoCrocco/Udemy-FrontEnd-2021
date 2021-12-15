@@ -197,3 +197,19 @@ Más adelante vamos a poder como podemos separar las clases en diferentes archiv
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			11. Sistema de Ventas con JavaScript	
+
+Iterar una lista en JavaScript se hace definiendo una variable y utilizando la palabra reservada of. Ejemplo: let item of this._productos.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			12. Proyecto Mundo PC con JavaScript	
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			13. Modo Strict en JavaScript	
+
+El modo estricto de JavaScript no deja que usemos variables sin antes haberlas declarado. Se utiliza poniendo al principio de nuestro archivo de extensión .js "use strict";
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			14. POO en JavaScript	
