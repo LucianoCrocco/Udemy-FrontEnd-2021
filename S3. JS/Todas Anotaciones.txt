@@ -213,3 +213,31 @@ El modo estricto de JavaScript no deja que usemos variables sin antes haberlas d
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			14. POO en JavaScript	
+
+Utilizando el mismo nombre de un metodo padre en una clase hija estamos sobrescribiendo el metodo (polimorfismo o nuevo metodo). Para acceder al elemento padre tanto para constructores como para metodos utilizamos la palabra reservada super.
+
+La palabra instanceof nos permite filtrar a que tipo de instancias queremos acceder en nuestro codigo. Parecido al typeof. La palabra instanceof responde a una relacion padre-hijo. 
+Ejemplo: PARAMETRO instanceof(CLASE).
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			15. Manejo de Errores en JavaScript	
+
+Los errores los manejamos con bloques try-catch-finally. El catch se hace a un objeto error (es el mas generico) que nos devuelve un mensaje cuando lo accedemos. 
+Ejemplo: 
+"use strict";
+try{
+    x = 10;
+} catch(error){
+    console.log(error);
+}finally{
+    console.log("El programa continua");
+}
+
+
+El throw envia un objeto de tipo error pero personalizando el mensaje que se envia en el objeto. Los errores tiene la propiedad name y message, si enviamos nuestro propio throw no se aplican estas propiedades.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			16. Funciones Flecha (Arrow Functions) en JavaScript	

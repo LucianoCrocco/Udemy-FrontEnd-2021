@@ -1,0 +1,13 @@
+Los errores los manejamos con bloques try-catch-finally. El catch se hace a un objeto error (es el mas generico) que nos devuelve un mensaje cuando lo accedemos. 
+Ejemplo: 
+"use strict";
+try{
+    x = 10;
+} catch(error){
+    console.log(error);
+}finally{
+    console.log("El programa continua");
+}
+
+
+El throw envia un objeto de tipo error pero personalizando el mensaje que se envia en el objeto. Los errores tiene la propiedad name y message, si enviamos nuestro propio throw no se aplican estas propiedades.

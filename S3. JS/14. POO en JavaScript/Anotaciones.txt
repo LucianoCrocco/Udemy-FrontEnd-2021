@@ -1,0 +1,4 @@
+Utilizando el mismo nombre de un metodo padre en una clase hija estamos sobrescribiendo el metodo (polimorfismo o nuevo metodo). Para acceder al elemento padre tanto para constructores como para metodos utilizamos la palabra reservada super.
+
+La palabra instanceof nos permite filtrar a que tipo de instancias queremos acceder en nuestro codigo. Parecido al typeof. La palabra instanceof responde a una relacion padre-hijo. 
+Ejemplo: PARAMETRO instanceof(CLASE).
