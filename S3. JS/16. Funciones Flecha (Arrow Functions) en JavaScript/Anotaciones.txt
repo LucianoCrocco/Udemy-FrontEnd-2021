@@ -1,0 +1,2 @@
+Con la funcion flecha no se aplica el concepto de Hoisting.
+Si utilizamos una sola linea de codigo no hace falta utilizar los simbolos {}.

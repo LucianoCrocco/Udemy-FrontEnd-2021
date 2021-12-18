@@ -241,3 +241,28 @@ El throw envia un objeto de tipo error pero personalizando el mensaje que se env
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			16. Funciones Flecha (Arrow Functions) en JavaScript	
+
+Con la funcion flecha no se aplica el concepto de Hoisting.
+Si utilizamos una sola linea de codigo no hace falta utilizar los simbolos {}.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			17. Funciones Callback en JavaScript
+
+Una función de tipo callback es una función que se pasa como parametro a otra función y dentro de una función vamos a poder llamar a otra función.
+Aplica el concepto de Hoisting.
+Ejemplo función callback:
+function Sumar(op1, op2, funcionCallBack) {
+    funcionCallBack(op1 + op2);
+}
+
+
+El objetivo de las funciones de tipo callback es que puedan ser utilizadas para procesos que se ejecutan de manera asincronica.
+Cuando hablamos de procesos sincronicos, quiere decir que ejecuta una linea a la vez. Cuando tratamos con procesos asincronicos quiere decir que vamos a poder ejectuar varios procesos por separado.
+https://stackoverflow.com/questions/8963209/does-async-programming-mean-multi-threading
+https://itblogsogeti.com/2016/03/22/async-vs-multithread/
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			18. Promesas en JavaScript
