@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplo Formulario con JavaScript</title>
 </head>
 <body>
+    <h1 id="titulo">Formulario</h1>
+    <form id="formulario">
+        <input type="text" name="nombre" value="Juan">
+        <br>
+        <input type="text" name="apellido" value="Perez">
+        <br>
+    </form>
+    <button onclick="MostrarValores()">Mostrar</button>
+    <br>
+    <img id="imagen" src="img/html5.png" alt="HTML5">
+    <br>
+
+
+    <script>
+        document.getElementById("titulo").style.color = "crimson";
+        function MostrarValores(){
+            let formulario = document.forms["formulario"];
+            let texto = "";
+            //Acceder a traves de una iteracion a todos los elementos.
+            /* for(let item of formulario){
+                texto += item.value + " ";
+            }*/
+            //Acceder de manera individual.
+            let nombre = formulario["nombre"];
+            let apellido = formulario["apellido"];
+            texto += nombre.value + " " + apellido.value;
+            console.log(texto);
+            document.getElementById("titulo").innerHTML = "Formulario enviado";
+            document.getElementById("imagen").src = "img/javascript.png"
+            document.getElementById("titulo").style.color = "blue";
+        }
+        document.write("Saludos desde JavaScript");
+    </script>
     
 
     <a href="index.html">Volver al inicio</a>

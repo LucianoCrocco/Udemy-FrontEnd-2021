@@ -11,3 +11,7 @@ Con la propiedad document.getElementsByTagName("ETIQUETA"); podemos tomar todos 
 Con la propiedad document.getElementsByClassName("NOMBRE DE LA CLASE"); podemos tomar todos los tags que concuerden con la clase CSS. Si pasamos una etiqueta invalida lo tomara como si no existiera, o con 0.
 
 La propiedad document.querySelectorAll(TAG.CLASE); nos permite tomar todos los tags con una clase especifica.
+
+Para acceder a los elementos de un formulario utilizamos el metodo de document.forms["ID DEL FORM"];
+
+La propiedad document.write nos permite escribir con JavaScript sobre el HTML. Sin embargo al utilizarlo puede quitar el ultimo elemento HTML que encuentre. Depende de como se utilice.
