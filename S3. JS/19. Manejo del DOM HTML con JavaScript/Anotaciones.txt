@@ -1,0 +1,13 @@
+DOM: https://en.wikipedia.org/wiki/Document_Object_Model
+El Document Object Model (DOM) son todos los elementos y sub elementos que componen un archivo html. Cuando trabajamos desde JavaScript cada uno de los elementos y sub elementos del archivo HTML se tratan como objetos. El document es el objeto mas generico y conforme desarrollamos la pagina se desprenden los demas objetos, mirar la imagen como referencia.
+
+
+Los elementos script (si bien vamos a ver otra forma mas practica de utilizar JS) deben estar despues de todos los tags que componen el body para poder acceder a estos.
+
+La propiedad getElementById("STRING-NOMBRE"), nos devuelve el tipo de objeto del tag. Para filtrar su contenido utilizamos el .innerHTML, esta propiedad podemos utilizarla tanto para lectura como para escritura.
+
+Con la propiedad document.getElementsByTagName("ETIQUETA"); podemos tomar todos los tags que concuerden con la etiqueta. Si pasamos una etiqueta invalida lo tomara como si no existiera, o con 0.
+
+Con la propiedad document.getElementsByClassName("NOMBRE DE LA CLASE"); podemos tomar todos los tags que concuerden con la clase CSS. Si pasamos una etiqueta invalida lo tomara como si no existiera, o con 0.
+
+La propiedad document.querySelectorAll(TAG.CLASE); nos permite tomar todos los tags con una clase especifica.

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model con JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Testing para ver que pasa si accedo antes a los elementos.
+    <script>
+        let cabecero = document.getElementById("cabecero");
+        let parrafo = document.getElementById("parrafo").innerHTML;
+        console.log("Saludos desde JavaScript");
+        console.log("Valor cabecero: " + cabecero);
+        console.log("Valor parrafo: " + parrafo);
+    </script>
+    -->
+    <h1 id="cabecero" class="azul">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo1" class="azul">Saludos!</p>
+    <p id="parrafo2">Otro parrafo</p>
+
+    <script>
+        let cabecero = document.getElementById("cabecero");
+        let parrafo = document.getElementById("parrafo1").innerHTML;
+        console.log("Saludos desde JavaScript");
+        console.log(`Valor cabecero: ${cabecero}`);
+        console.log("Valor parrafo1: " + parrafo1);
+        document.getElementById("parrafo1").innerHTML = "Nuevo valor del parrafo1";
+
+        let parrafos = document.getElementsByTagName("p");
+        console.log(`Cantidad de parrafos en el archivo HTML: ${parrafos.length} - Uitlizo document.getElementsByTagName`);
+        for(let i= 0; i< parrafos.length;  i++){
+            console.log(`Contenido parrafo numero ${i+1}: ${parrafos[i].innerHTML}`);
+        }
+
+        let claseAzul = document.getElementsByClassName("azul");
+        console.log(`Cantidad de clases de tipo azul en el archivo HTML: ${claseAzul.length} - Uitlizo document.getElementsByClassName`);
+        for(let i= 0; i< claseAzul.length;  i++){
+            console.log(`Contenido la clase azul numero ${i+1}: ${claseAzul[i].innerHTML}`);
+        }
+
+        let claseYTag = document.querySelectorAll("p.azul");
+        console.log(`Cantidad de parrafos con la clase azul en el archivo HTML: ${claseYTag.length} - Uitlizo document.querySelectorAll`);
+        for(let i= 0; i< claseYTag.length;  i++){
+            console.log(`Contenido del parrafo con la clase azul numero ${i+1}: ${claseYTag[i].innerHTML}`);
+        }
+    </script>
+    <a href="formulario.html">Formulario con DOM</a>
+</body>
+</html>

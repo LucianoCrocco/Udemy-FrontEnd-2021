@@ -1,0 +1,13 @@
+En promesas utilizamos funciones de tipo callback.
+Una promesa básicamente es código que tiene varios estados, así que vamos a poder lanzar una petición para procesar un código. En dado caso que la promesa se resuelta correctamente se resuelve el codigo y en caso que haya tenido problemas se manda a llamar el error.
+Por lo tanto podemos decir que existen dos caminos: Un en el que se ejecuto el codigo correctamente y se resolvio el mismo y otro en el cual falla el codigo y se manda a llamar el error en el catch.
+Mientras la promesa no haya terminado de ejecutar el codigo se encuentra en estado de pendiente. Una vez ejecutado el codigo si se puede resolver utilizamos la funcion .then(), en caso de que no se haya podido procesar utilizaremos la funcion .catch().
+
+Sintaxis: Mirar el código.
+
+Pagina de ejemplos y definiciones: https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises
+Una Promise (promesa en castellano) es un objeto que representa la terminación o el fracaso de una operación asíncrona. Dado que la mayoría de las personas consumen promises ya creadas, esta guía explicará primero cómo consumirlas, y luego cómo crearlas.
+
+La palabra async nos va a permitir el uso de promesas. Al poner la palabra antes de la definición de un método significa que esta obligado a regresar una promesa.
+
+La palabra reservada await solo puede utilizarse dentro de una función aysnc.
