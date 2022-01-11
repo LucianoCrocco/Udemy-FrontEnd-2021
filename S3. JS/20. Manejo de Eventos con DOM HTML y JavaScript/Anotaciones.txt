@@ -1,0 +1,4 @@
+Las cookies son archivos que guardan información cuando estamos navegando por sitios web. Y esta información se guarda en el formato de key:value. Asi podemos asociar por ejemplo un nombre de usuario con el usuario (usuario:"nombre") y almacenarlo en una cookie.
+
+Para no colocar cada uno de los eventos que queremos utilizar dentro de las etiquetas HTML podemos utilizar el metodo addEventListener. El evento asociado solo lleva el nombre y no la accion que indica el nombre (si el evento es onfocus solo lleva el focus).
+Ejemplo: document.getElementById("ID").addEventListener("EVENTO", METODO-ASOCIADO);

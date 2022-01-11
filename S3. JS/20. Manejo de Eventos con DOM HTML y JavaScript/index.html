@@ -6,7 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo de Eventos con DOM HTML y JavaScript</title>
 </head>
-<body>
-    
+<body id="cargaPaginaWeb"><!--Otras formas: <body onload="cambiarTextoJS(this)" o como esta en el cambiarTexto-->
+</body>
+    <h1 onclick="cambiarTexto(this);">Manejo DOM con JavaScript</h1><!--Evento en HTML: h1 onclick="this.innerHTML = 'Cambiamos el titulo';"-->
+    <br>
+    <hr>
+    <h1 id="titulo">Cambiar el titulo desde JS</h1>
+    <br>
+    <hr>
+    <p>Nombre: <input type="text" id="nombre" onchange="convertir()"></p>
+    <br>
+    <hr>
+    <h1 id="tituloDos" onmouseover="rojo(this)" onmouseout="violeta(this)">onMouseOver y onMouseOut</h1>
+    <br>
+    <hr>
+    <h1 id="tituloTres" onmousedown="rojo(this)" onmouseup="violeta(this)" onclick="verde(this)">onMouseDown, onMouseUp y onClick</h1>
+    <br>
+    <hr>
+    <h1>OnFocus y OnBlur</h1>
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)">
+    <br>
+    <hr>
+    <h1>AddEventListener</h1>
+    Nombre: <input type="text" id="nombreTexto">
+    Apellido: <input type="text" id="apellidoTexto">   
+    <br>
+    <hr>
+    <h1>Funciones flecha con AddEventListener</h1>
+    Nombre: <input type="text" id="nombreTextoFlecha">
+    <br>
+    <hr>
+    <h1>Delegación de Eventos con JavaScript</h1>
+    <form id="formulario">
+        Nombre: <input type="text" id="formNombre">
+        Apellido: <input type="text" id="formApellido">
+    </form>
+
+    <script>
+        /*Cambiar elemento con HTML*/
+        function cambiarTexto(item){
+            console.log(item);
+            console.log(item.innerHTML);
+            item.innerHTML = "Cambiamos el titulo";
+        }
+
+        /*Asociar eventos con JS*/
+        document.getElementById("titulo").onclick = cambiarTextoJS;
+        function cambiarTextoJS(){
+            console.log(document.getElementById("titulo").innerHTML);
+            document.getElementById("titulo").innerHTML = "Nuevo titulo";
+        }
+
+        /*Evento onload*/
+        document.getElementById("cargaPaginaWeb").onload = cargarPaginaJS;
+        function cargarPaginaJS(){
+            let texto = 'Las cookies estan inhabilitadas';
+            if(navigator.cookieEnabled){
+                let = "Las cookies estan habilitadas"
+            }
+            alert(texto);
+        }
+
+        /*Evento onchange*/
+        function convertir(){
+            let nombre = document.getElementById("nombre").value;
+            document.getElementById("nombre").value = nombre.toUpperCase();
+        }
+        /* Otra forma pasandole el mismo input por valores: <input type="text" onchange="convertir(this). Aplicable de esta forma por ejemplo en los onMouseX. Sirve para reutilizar codigo y no tener que estar poniendo el id por cada funcion.">
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }*/
+
+        /*Evento onMouseSet y onMouseOut y Evento onMouseDown, onMouseUp y onClick*/ 
+        function rojo(elemento){
+            elemento.style.color = "red";
+            console.log("OnMouseDown");
+        }
+        function violeta(elemento){
+            elemento.style.color = "violet";
+            console.log("OnMouseUp");
+        }
+        function verde(elemento){
+            elemento.style.color = "green";
+            console.log("OnClick");
+        }
+
+        /*Evento onFocus y onBlur*/ 
+        function cambiar(elementoInput){
+            elementoInput.style.background = "yellow";
+        }
+        function regresar(elementoInput){
+            elementoInput.style.background = "white";
+        }
+        
+        /*Metodo addEventListener*/ 
+        document.getElementById("nombreTexto").addEventListener("focus", cambiarConEvento);
+        document.getElementById("nombreTexto").addEventListener("blur", regresarConEvento);
+        document.getElementById("apellidoTexto").addEventListener("focus", cambiarConEvento);
+        document.getElementById("apellidoTexto").addEventListener("blur", regresarConEvento);
+
+        function cambiarConEvento(evento){
+            let componente = event.target;
+            componente.style.background = "yellow"
+        }
+        function regresarConEvento(evento){
+            evento.target.style.background = "white"
+        }
+        
+        /*Funciones flecha con addEventListener*/ 
+        document.getElementById("nombreTextoFlecha").addEventListener("focus", (evento) => evento.target.style.background="pink");
+        document.getElementById("nombreTextoFlecha").addEventListener("blur", (evento) => evento.target.style.background="red");
+
+        /*Utilizacion de delegados para Eventos*/ 
+        const form = document.getElementById("formulario");
+        form.addEventListener("focus", (evento) => evento.target.style.background="pink", true);
+        form.addEventListener("blur", (evento) => evento.target.style.background="white", true);
+    </script>
 </body>
 </html>
